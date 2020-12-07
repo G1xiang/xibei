@@ -8,27 +8,25 @@ body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fi
 }
 body{width: $w;
 position: relative;}
-.banner{
-    
-   .video-wrapper{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 11;
-    overflow: hidden;
-       video{
-       object-fit: fill;
-       min-width: 100%;
-       min-height: 100%;
-       width: auto;
-       height: auto;
-       position: absolute;
-       top: 50%;
-       left: 50%;
-       transform: translate3d(-50%,-50%,0);
-   }
-}
-}
+// .banner{ 
+//    .video-wrapper{
+//     width: 100%;
+//     height: 100%;
+//     z-index: 11;
+//     overflow: hidden;
+//        video{
+//        object-fit: fill;
+//        min-width: 100%;
+//        min-height: 100%;
+//        width: auto;
+//        height: auto;
+//        position: absolute;
+//        top: 50%;
+//        left: 50%;
+//        transform: translate3d(-50%,-50%,0);
+//    }
+// }
+// }
 .rightNav{
     height: 100%;
     width: 7%;
@@ -105,11 +103,12 @@ position: relative;}
      
  }
 }
-.container{
-    position: fixed;
-    top: -100%;
+.allbox{
+    width: 93%;
+    position: absolute;
+    left: 0;
     .plate{
-        width: $w;
+        width: 100%;
         height: 580px;
         overflow: hidden;
         position: relative;
@@ -155,7 +154,7 @@ position: relative;}
         }
     }
     .news{
-        width: 93%;
+        width: 100%;
         height: 600px;
         a {
             text-decoration: none;
@@ -179,7 +178,7 @@ position: relative;}
           }
           
           .front2 {
-            width: 1116;
+            width: 1116px;
             border-bottom: 1px solid #ccc;
             border-top: 1px solid #ccc;
             margin: 0 auto;
@@ -249,8 +248,8 @@ position: relative;}
           }
     }
     .cate{
-        height: 1116px;
-        width: 93%;
+        height: 1000px;
+        width: 100%;
         padding-bottom: 60px;
         padding-top: 60px;
     
@@ -327,7 +326,7 @@ position: relative;}
                 height: 36px;
             }
             p {
-                font-size: 18px;
+                font-size: 16px;
                 line-height: 60px;
                 height: 60px;
                 padding-bottom: 30px;
@@ -347,7 +346,7 @@ position: relative;}
     }
     .footNav{
         height: 300px;
-        width: 93%;
+        width: 100%;
         .card-body{margin: 0 auto;}
             .card-body .card-title{text-align: center;}
             .card-body .card-text{text-align: center;}
@@ -421,7 +420,7 @@ position: relative;}
             }
     }
     .footer{
-        width: 93%;
+        width: 100%;
         font-size: 14px;
         color: #8d8d8d;
         overflow: hidden;
@@ -534,3 +533,11 @@ position: relative;}
         background: #fff;
     }
 }
+// .hide{
+//     top:100%;
+//     position: fixed;
+// }
+// .hide1{
+//     top:0;
+//     position: fixed;
+// }
