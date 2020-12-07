@@ -20,7 +20,7 @@ function htmlTask(){
 }
 //static静态资源的处理
 function staticTask(){
-    return src('./src/static/**')
+    return src('./src/static/modules/**')
             .pipe(dest('./dist/static'));
 }
 
