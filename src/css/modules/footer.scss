@@ -1,0 +1,82 @@
+.footer{
+    width: 100%;
+    font-size: 14px;
+    color: #8d8d8d;
+    overflow: hidden;
+    .all{
+        
+        .footer-top{
+            border-bottom: 1px solid #e3e3e3;
+            padding: 20px 20px 40px 50px;
+            .footer-logo{
+                width: 180px;
+                height: 150px;
+                float: left;
+                img{
+                    width: 100%;
+                }
+                
+                }
+                .footer-right{
+                    overflow: hidden;
+                    margin-left: 300px;
+                    ul{
+                        display:flex;
+                        justify-content: space-between;
+                        padding-top: 20px;
+                        list-style: none;
+                        li{
+                            text-align: center;
+                            dl{
+                                
+                                dt{
+                                    color: #222;
+                                    
+                                    font : {
+                                               size : 14px;
+                                               family : PingFangHK-Regular;
+                                           }
+                                    
+                                    line-height: 14px;
+                                    margin-bottom: 20px;
+                                    width: 100%;
+                                    a{
+                                        text-decoration: none;
+                                        color: #222;
+                                    }
+                                    
+                                }
+                                dd{
+                                    font : {
+                                        size : 12px;
+                                        family : PingFangHK-Regular;
+                                    } 
+                                    
+                                    line-height: 200%;
+                                    a{
+                                        text-decoration: none;
+                                        color: #8d8d8d;
+                                    }
+
+                                }
+                                .c2{
+                                    width: 230px;
+                                    overflow: hidden;
+                                    a{
+                                        width: 50%;
+                                        float: left;
+                                    }
+                                }
+                            }
+                        }
+                    }
+            }
+        }
+        .footer-bottom{
+            p{
+                float: right;
+                font-size: 12px;
+            }
+        }
+    }
+}
