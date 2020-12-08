@@ -18,7 +18,7 @@ position: relative;}
   width: 97%;
 }
 
-  .video-wrapper{
+.video-wrapper{
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -162,68 +162,57 @@ position: relative;}
             text-decoration: none;
           }
           
-          .ellipsis {
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            width: 527px;
-          }
-          
-          .meida-img {
-            width: 100%;
-            padding-bottom: 50.5%;
-            background-size: cover;
-          }
-          
-          .mediaBoxleft {
+          .le {
+            float: left;
             border-right: 1px solid #ccc;
-            width: 50%;
+          }
+          
+          .r {
+            float: right;
           }
           
           .front2 {
-            width: 1116px;
-            border-bottom: 1px solid #ccc;
+            width: 93%;
             border-top: 1px solid #ccc;
-            margin: 0 auto;
+            border-bottom: 1px solid #ccc;
+            overflow: hidden;
           }
           
           .front2 .mediaBox {
-            float: left;
             width: 50%;
-            height: 100%;
             padding: 50px;
-            box-sizing: border-box;
             text-align: center;
           }
           
+          .front2 .mediaBox div {
+            width: 100%;
+            height: 375px;
+          }
+          
           .front2 .mediaBox div a {
-            overflow: hidden;
+            width: 100%;
+            height: 374px;
           }
           
           .front2 .mediaBox div a .current {
-            background: url('http://www.xibei.com.cn/sites/default/files/cover/guan_wang_feng_mian_tu_.jpg');
-            background-size: 457px 230px;
-            background-repeat: no-repeat;
+            height: 265px;
+            background: url(http://www.xibei.com.cn/sites/default/files/cover/guan_wang_feng_mian_tu_.jpg);
+            background-size: cover;
             background-position: center center;
-            overflow: hidden;
           }
           
           .front2 .mediaBox div a .current2 {
-            background: url('http://www.xibei.com.cn/sites/default/files/styles/event_cover/public/cover/guan_wang__0.jpg?itok=OmbhItnh');
-            background-size: 457px 230px;
-            background-repeat: no-repeat;
-            background-position: center center;
-            overflow: hidden;
+            height: 265px;
+            background: url("http://www.xibei.com.cn/sites/default/files/styles/event_cover/public/cover/guan_wang__0.jpg?itok=OmbhItnh");
+            background-size: 100% 100%;
           }
           
           .front2 .mediaBox div a .meida-main {
             padding-top: 50px;
-            color: red;
             font-size: 24px;
           }
           
           .front2 .mediaBox div a .meida-main h2 {
-            font-size: 24px;
             color: #222;
           }
           
@@ -231,6 +220,7 @@ position: relative;}
             font-size: 14px;
             padding-top: 15px;
             color: #8d8d8d;
+            line-height: 14px;
           }
           
           .front2 .mediaBox div a .meida-main p .time {
@@ -243,11 +233,11 @@ position: relative;}
             border-right: 1px solid #8d8d8d;
           }
           
-          .front2 .mediaBox a {
+          .front2 .mediaBox .more {
             color: #000;
             margin-top: 50px;
             font-size: 14px;
-            display: inline-block;
+            display: block;
           }
     }
     .cate{
@@ -507,37 +497,37 @@ position: relative;}
             }
     }
     @import './footer.scss';
-    .my_class{
-        position: absolute;
-        z-index: 2;
-        display: flex;
-        padding: 0 7%;
-        width: 100%;
-        margin-top:100px ;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .my_class_0{
-        font-size: 40px;
-        color: #FFFFFF;
-        text-align: center;
-        margin-bottom: 60px;
+    // .my_class{
+    //     position: absolute;
+    //     z-index: 2;
+    //     display: flex;
+    //     padding: 0 7%;
+    //     width: 100%;
+    //     margin-top:100px ;
+    //     flex-direction: row;
+    //     justify-content: space-around;
+    // }
+    // .my_class_0{
+    //     font-size: 40px;
+    //     color: #FFFFFF;
+    //     text-align: center;
+    //     margin-bottom: 60px;
        
-    }
-    .my_class_1{
-        color: #fff;
-        transition: all 0.4s;
-        text-decoration: none;
-    }
-    .my_class_2{
-        list-style: none;
-        margin-left: 38px;
-    }
-    .my_class_3{
-        height: 1px;
-        width: 0;
-        background: #fff;
-    }
+    // }
+    // .my_class_1{
+    //     color: #fff;
+    //     transition: all 0.4s;
+    //     text-decoration: none;
+    // }
+    // .my_class_2{
+    //     list-style: none;
+    //     margin-left: 38px;
+    // }
+    // .my_class_3{
+    //     height: 1px;
+    //     width: 0;
+    //     background: #fff;
+    // }
 }
 // .hide{
 //     top:100%;

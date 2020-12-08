@@ -14,40 +14,46 @@
 
 <body>
     <!-- 头部视频banner -->
-    <header class="banner">
-        <div class="video-wrapper hide1">
-            <video poster="http://www.xibei.com.cn/sites/all/themes/xibei/images/frontBg.jpg" loop="" muted=""
-                autoplay="">
-                <source src="http://www.xibei.com.cn/sites/all/themes/xibei/images/front.mp4" type="video/mp4">
-            </video>
+    <div class="video-wrapper" id="box1">
+        <video poster="http://www.xibei.com.cn/sites/all/themes/xibei/images/frontBg.jpg" loop="" muted=""
+            autoplay="">
+            <source src="http://www.xibei.com.cn/sites/all/themes/xibei/images/front.mp4" type="video/mp4">
+        </video>
+        <div class="front-mask hide"></div>
+        <div class="front-logo">
+            <img src="http://www.xibei.com.cn/sites/all/themes/xibei/images/logo.png" alt="西贝" title="西贝莜面村 创造喜悦人生">
         </div>
-    </header>
+        <a href="javascript:;" class="scroll-wheel">
+        </a>
+    </div>
+    <!-- </header> -->
     <!-- 网页内容部分 -->
-    <div class="allbox hide">
-        <aside class="rightNav">
-            <div class="nav">
-                <div class="navTop">
-                    <a href="#">
-                        <img src="http://www.xibei.com.cn/sites/all/themes/xibei/images/logo-s.svg" alt="">
-                    </a>
-                </div>
-                <div class="operation-box">
-                    <a class="service" href="#">&nbsp;</a>
-                    <a href="#" class="position">&nbsp;</a>
-                    <a class="nav-btn close" href="#">
-                        <span class="n1">&nbsp;</span> 
-                        <span class="n2">&nbsp;</span> 
-                        <span class="n3">&nbsp;</span> 
-                    </a> 
-                    <a class="food-menu" href="#">菜单</a>
-                </div>
-                <div class="navDown">
-                    <a href="#">
-                        <img src="http://www.xibei.com.cn/sites/all/themes/xibei/images/logo-s.svg" alt="">
-                    </a>
-                </div>
+    <aside class="rightNav">
+        <div class="nav">
+            <div class="navTop">
+                <a href="#">
+                    <img src="http://www.xibei.com.cn/sites/all/themes/xibei/images/logo-s.svg" alt="">
+                </a>
             </div>
-        </aside>
+            <div class="operation-box">
+                <a class="service" href="./cart.html">&nbsp;</a>
+                <a href="#" class="position">&nbsp;</a>
+                <a class="nav-btn" href="#">
+                    <span class="n1">&nbsp;</span> 
+                    <span class="n2">&nbsp;</span> 
+                    <span class="n3">&nbsp;</span> 
+                </a> 
+                <a class="food-menu" href="#">菜单</a>
+            </div>
+            <div class="navDown">
+                <a href="#">
+                    <img src="http://www.xibei.com.cn/sites/all/themes/xibei/images/logo-s.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </aside>
+    <div class="allbox" id="box2">
+        
         <section class="plate">
             <div class="panzi">
                 <img src="" alt="">
@@ -66,47 +72,47 @@
         </section>
         <section class="news">
             <div class="front2">
-            <div class="mediaBox mediaBoxleft">
-                <div>
-                    <a href="./newsneirong.html">
-                        <div class="meida-img current"></div>
-                        <div class="meida-main">
-                            <h2 class="ellipsis">西贝有机莜面节开幕   不仅是好吃</h2>
-                            <p>
-                                <span class="time">
-                                    <span class="date">2020.04.26</span>
-                                    
-                                </span>
-                                西贝莜面村主食升级 有机莜面上市
-                            </p>
-                        </div>
+                <div class="mediaBox le">
+                    <div>
+                        <a href="#">
+                            <div class="meida-img current"></div>
+                            <div class="meida-main">
+                                <h2 class="ellipsis">西贝有机莜面节开幕 不仅是好吃</h2>
+                                <p>
+                                    <span class="time">
+                                        <span class="date">2020.04.26</span>                                
+                                    </span>
+                                    西贝莜面村主食升级 有机莜面上市
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#" class="more">
+                        <span>全部新闻&nbsp; →</span>
                     </a>
                 </div>
-                <a href="#" class="more">
-                    <span>全部新闻</span>
-                </a>
-            </div>
-            <div class="mediaBox">
-                <div>
-                    <a href="#">
-                        <div class="meida-img current2"></div>
-                        <div class="meida-main">
-                            <h2 class="ellipsis">西贝新款儿童餐全国上市 孩子补充营养正当时</h2>
-                            <p>
-                                <span class="time">
-                                <span class="date">2020.09.29</span>
-                                    
-                                </span>
-                                家有宝贝就吃西贝
-                            </p>
-                        </div>
+                <div class="mediaBox r">
+                    <div>
+                        <a href="#">
+                            <div class="meida-img current2"></div>
+                            <div class="meida-main">
+                                <h2 class="ellipsis">西贝新款儿童餐全国上市 孩子补充营养正当时</h2>
+                                <p>
+                                    <span class="time">
+                                    <span class="date">2020.09.29</span>
+                                        
+                                    </span>
+                                    家有宝贝就吃西贝
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#" class="more">
+                        <span>全部活动&nbsp;→</span>
                     </a>
                 </div>
-                <a href="#" class="more">
-                    <span>全部活动</span>
-                </a>
+        
             </div>
-        </div>
         </section>
         <section class="cate">
             <div class="bigbox">
@@ -241,6 +247,7 @@
                 </div>
         </footer>
     </div>
+    
 </body>
 
 </html>
