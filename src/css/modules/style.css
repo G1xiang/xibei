@@ -9,6 +9,116 @@ body {
   position: relative;
 }
 
+#box1 {
+  overflow-y: visible;
+  top: 0;
+  transition: 1s all;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+#box2 {
+  top: 100%;
+  transition: 1s;
+  position: fixed;
+  width: 97%;
+}
+
+.video-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+}
+
+.video-wrapper .front-mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/heart.png") no-repeat center center;
+  background-size: cover;
+  transition: transform 0.4s ease-out;
+  z-index: 14;
+}
+
+.video-wrapper .hide {
+  transform: scale(4);
+  transition-duration: 0.4s;
+}
+
+.video-wrapper .show {
+  transform: scale(1);
+}
+
+.video-wrapper video {
+  object-fit: fill;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.video-wrapper .front-logo img {
+  display: block !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 180px;
+  text-align: center;
+  margin: -90px 0 0 -90px;
+  z-index: 12;
+  display: none;
+}
+
+.video-wrapper .scroll-wheel {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -13.5px;
+  bottom: 38px;
+  width: 21px;
+  height: 32px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  z-index: 9;
+  transition: all 0.75s;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.video-wrapper .scroll-wheel::before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 4px;
+  position: absolute;
+  border-radius: 4px;
+  top: 10px;
+  left: 10px;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.video-wrapper .scroll-wheel::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 34px;
+  position: absolute;
+  background: #fff;
+  left: 10px;
+  top: 40px;
+}
+
 .rightNav {
   height: 100%;
   width: 7%;
@@ -158,12 +268,6 @@ body {
 .rightNav .nav .navDown a img {
   border-radius: 50%;
   width: 100%;
-}
-
-.allbox {
-  width: 93%;
-  position: absolute;
-  left: 0;
 }
 
 .allbox .plate {
