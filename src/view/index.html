@@ -14,7 +14,6 @@
 
 <body>
     <!-- 头部视频banner -->
-    <!-- <header class="banner" id="box1"> -->
     <div class="video-wrapper" id="box1">
         <video poster="http://www.xibei.com.cn/sites/all/themes/xibei/images/frontBg.jpg" loop="" muted=""
             autoplay="">
@@ -248,28 +247,7 @@
                 </div>
         </footer>
     </div>
-    <script>
-        var scrollFunc=function(e){
-            console.log(e.wheelDelta);
-            if(e.wheelDelta<0){
-                console.log(1)
-                $('#box1').css({"top":"-100%"})
-                $('#box2').css({"top":"0","position":"static"})
-                $('.front-mask').removeClass('hide').addClass('show')
-            }
-            else if(e.wheelDelta>0&&$('#box2').offset().top - $(window).scrollTop()==0){
-                $('#box1').css("top","0")
-                $('#box2').css({"top":"100%","position":"fixed"})
-                $('.front-mask').removeClass('show').addClass('hide')
-
-            }
-        }
-    /*注册事件*/
-        if(document.addEventListener){
-            document.addEventListener('DOMMouseScroll',scrollFunc,false);
-        }
-        window.onmousewheel=document.onmousewheel=scrollFunc;
-        </script>
+    
 </body>
 
 </html>
