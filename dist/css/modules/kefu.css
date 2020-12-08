@@ -1,4 +1,90 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.banner {
+  width: 100%;
+  height: 500px;
+  min-width: 1500px;
+  background: url(http://www.xibei.com.cn/sites/all/themes/xibei/images/xibei-kefu.jpg) no-repeat center;
+  background-size: 100%,100%; }
+  .banner h1 {
+    font-weight: normal;
+    font-family: '方正粗黑宋简体';
+    font-size: 140px;
+    letter-spacing: -20px;
+    text-align: left;
+    line-height: 140px;
+    margin-bottom: 15px;
+    padding-top: 150px;
+    padding-left: 78px;
+    color: #fff; }
+  .banner p {
+    color: #fff;
+    font-size: 30px;
+    padding-left: 100px;
+    text-align: left;
+    font-family: PingFangSC-Regular, PingFangHK-Regular, SourceHanSansCN-Normal, "Source Han Sans CN", "Microsoft YaHei", 微软雅黑, "Microsoft YaHei UI", Helvetica, Tahoma, Arial, 宋体, sans-serif; }
+
+.footer {
+  width: 90%;
+  font-size: 14px;
+  color: #8d8d8d;
+  border-top: 1px solid #e3e3e3;
+  overflow: hidden; }
+  .footer .all .footer-top {
+    border-bottom: 1px solid #e3e3e3;
+    padding: 20px 20px 40px 50px; }
+    .footer .all .footer-top .footer-logo {
+      width: 180px;
+      height: 150px;
+      float: left; }
+      .footer .all .footer-top .footer-logo img {
+        width: 100%; }
+    .footer .all .footer-top .footer-right {
+      overflow: hidden;
+      margin-left: 300px; }
+      .footer .all .footer-top .footer-right ul {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        list-style: none; }
+        .footer .all .footer-top .footer-right ul li {
+          text-align: center; }
+          .footer .all .footer-top .footer-right ul li dl dt {
+            color: #222;
+            font-size: 14px;
+            font-family: PingFangHK-Regular;
+            line-height: 14px;
+            margin-bottom: 20px;
+            width: 100%; }
+            .footer .all .footer-top .footer-right ul li dl dt a {
+              text-decoration: none;
+              color: #222; }
+          .footer .all .footer-top .footer-right ul li dl dd {
+            font-size: 12px;
+            font-family: PingFangHK-Regular;
+            line-height: 200%; }
+            .footer .all .footer-top .footer-right ul li dl dd a {
+              text-decoration: none;
+              color: #8d8d8d; }
+          .footer .all .footer-top .footer-right ul li dl .c2 {
+            width: 230px;
+            overflow: hidden; }
+            .footer .all .footer-top .footer-right ul li dl .c2 a {
+              width: 50%;
+              float: left; }
+  .footer .all .footer-bottom p {
+    float: right;
+    font-size: 12px; }
+
 .rightNav {
   height: 100%;
   width: 7%;
@@ -110,86 +196,24 @@
           border-radius: 50%;
           width: 100%; }
 
-.footer {
-  width: 93%;
-  min-width: 1200px;
-  font-size: 14px;
-  color: #8d8d8d;
-  overflow: hidden; }
-  .footer .all .footer-top {
-    border-bottom: 1px solid #e3e3e3;
-    padding: 20px 20px 40px 50px; }
-    .footer .all .footer-top .footer-logo {
-      width: 180px;
-      height: 150px;
-      float: left; }
-      .footer .all .footer-top .footer-logo img {
-        width: 100%; }
-    .footer .all .footer-top .footer-right {
-      overflow: hidden;
-      margin-left: 300px; }
-      .footer .all .footer-top .footer-right ul {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 20px;
-        list-style: none; }
-        .footer .all .footer-top .footer-right ul li {
-          text-align: center; }
-          .footer .all .footer-top .footer-right ul li dl dt {
-            color: #222;
-            font-size: 14px;
-            font-family: PingFangHK-Regular;
-            line-height: 14px;
-            margin-bottom: 20px;
-            width: 100%; }
-            .footer .all .footer-top .footer-right ul li dl dt a {
-              text-decoration: none;
-              text-align: center;
-              color: #222; }
-          .footer .all .footer-top .footer-right ul li dl dd {
-            text-align: center;
-            margin: 0 auto;
-            font-size: 12px;
-            font-family: PingFangHK-Regular;
-            line-height: 200%; }
-            .footer .all .footer-top .footer-right ul li dl dd a {
-              text-decoration: none;
-              color: #8d8d8d;
-              text-align: center; }
-          .footer .all .footer-top .footer-right ul li dl .c2 {
-            width: 230px;
-            overflow: hidden; }
-            .footer .all .footer-top .footer-right ul li dl .c2 a {
-              width: 50%;
-              float: left; }
-  .footer .all .footer-bottom p {
-    float: right;
-    font-size: 12px; }
-
-* {
-  margin: 0;
-  padding: 0; }
-
-.banner {
+.service-main {
   width: 100%;
-  height: 500px;
-  min-width: 1500px;
-  background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/food-menu-banner@2x.jpg") no-repeat center;
-  background-size: 100%,100%; }
-  .banner h1 {
-    font-weight: normal;
-    font-family: '方正粗黑宋简体';
-    font-size: 140px;
-    letter-spacing: -20px;
-    text-align: left;
-    line-height: 140px;
-    margin-bottom: 15px;
-    padding-top: 150px;
-    padding-left: 78px;
-    color: #fff; }
-  .banner p {
+  text-align: center;
+  padding-top: 50px; }
+  .service-main h2 {
+    font-size: 58px;
+    font-weight: 300; }
+  .service-main p {
+    font-size: 27px;
+    margin: 50px; }
+  .service-main .chat {
+    width: 160px;
+    height: 50px;
+    border-radius: 50px;
+    display: inline-block;
+    line-height: 50px;
+    background: #E62511;
+    margin: 40px;
     color: #fff;
-    font-size: 30px;
-    padding-left: 100px;
-    text-align: left;
-    font-family: PingFangSC-Regular, PingFangHK-Regular, SourceHanSansCN-Normal, "Source Han Sans CN", "Microsoft YaHei", 微软雅黑, "Microsoft YaHei UI", Helvetica, Tahoma, Arial, 宋体, sans-serif; }
+    font-size: 20px;
+    text-decoration: none; }
