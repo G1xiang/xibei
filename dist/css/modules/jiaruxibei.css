@@ -1,0 +1,117 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul, ol {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+a {
+  text-decoration: none; }
+
+div {
+  display: block; }
+
+.banner {
+  width: 100%;
+  height: 500px;
+  min-width: 1500px;
+  background: url(http://www.xibei.com.cn/sites/all/themes/xibei/images/join/bg_joinus.png) no-repeat center;
+  background-size: 100%,100%; }
+  .banner h1 {
+    font-weight: initial;
+    font-size: 140px;
+    letter-spacing: -20px;
+    text-align: left;
+    line-height: 140px;
+    margin-bottom: 15px;
+    padding-top: 150px;
+    padding-left: 78px; }
+  .banner p {
+    font-size: 30px;
+    padding-left: 100px;
+    text-align: left;
+    font-family: '微软雅黑'; }
+
+.join-page2 {
+  padding: 60px 0 60px 7%;
+  color: #222222;
+  text-align: center; }
+
+.join-page2 h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-align: center; }
+
+.join-page2 p {
+  font-size: 24px;
+  position: relative; }
+
+.join-grow {
+  padding-top: 85px;
+  padding-bottom: 76px; }
+
+.join-grow li {
+  width: 20%;
+  float: left;
+  height: 100%;
+  text-align: center; }
+
+.join-grow .join-grow-item {
+  display: inline-block;
+  margin: 0 auto;
+  width: 100px;
+  padding-top: 100px;
+  cursor: pointer;
+  position: relative; }
+
+.join-grow li.j1 .join-grow-item:after {
+  background-image: url(http://www.xibei.com.cn/sites/all/themes/xibei/images/join/g1.png); }
+
+.join-grow li.j2 .join-grow-item:after {
+  background-image: url(http://www.xibei.com.cn/sites/all/themes/xibei/images/join/g2.png); }
+
+.join-grow li.j3 .join-grow-item:after {
+  background-image: url(http://www.xibei.com.cn/sites/all/themes/xibei/images/join/g3.png); }
+
+.join-grow li.j4 .join-grow-item:after {
+  background-image: url(http://www.xibei.com.cn/sites/all/themes/xibei/images/join/g4.png); }
+
+.join-grow li.j5 .join-grow-item:after {
+  background-image: url(http://www.xibei.com.cn/sites/all/themes/xibei/images/join/g5.png); }
+
+[data-src] {
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.join-page2 h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-align: center; }
+
+.join-grow p {
+  line-height: 40px;
+  display: inline-block; }
+
+.join-grow .join-grow-item:after {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 70px;
+  height: 70px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  transition: .4s all ease; }
+
+.join-grow p {
+  line-height: 40px;
+  display: inline-block; }

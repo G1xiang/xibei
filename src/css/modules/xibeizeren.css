@@ -295,7 +295,17 @@ a {
   font-size: 12px;
 }
 
-.nav {
+.rightNav {
+  height: 100%;
+  width: 7%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 20;
+}
+
+.rightNav .nav {
   width: 7%;
   height: 100%;
   position: fixed;
@@ -305,20 +315,21 @@ a {
   background: #fff;
 }
 
-.nav .navTop {
+.rightNav .nav .navTop {
   width: 100%;
 }
 
-.nav .navTop a {
+.rightNav .nav .navTop a {
   display: block;
   width: 100%;
+  text-decoration: none;
 }
 
-.nav .navTop a img {
+.rightNav .nav .navTop a img {
   width: 100%;
 }
 
-.nav .operation-box {
+.rightNav .nav .operation-box {
   width: 28px;
   height: 140px;
   position: absolute;
@@ -328,34 +339,37 @@ a {
   margin-top: -70px;
 }
 
-.nav .operation-box a {
+.rightNav .nav .operation-box a {
   display: block;
   cursor: pointer;
 }
 
-.nav .operation-box .service {
+.rightNav .nav .operation-box .service {
   background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/icon-kefu.png") no-repeat center;
   width: 100%;
   height: 28px;
   background-size: 24px;
+  text-decoration: none;
 }
 
-.nav .operation-box .position {
+.rightNav .nav .operation-box .position {
   background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/icon-weizhi.png") no-repeat center;
   width: 100%;
   height: 28px;
   background-size: 24px;
   margin: 30px 0;
+  text-decoration: none;
 }
 
-.nav .operation-box .nav-btn {
+.rightNav .nav .operation-box .nav-btn {
   position: relative;
   width: 24px;
   height: 24px;
   margin: 0 2px;
+  text-decoration: none;
 }
 
-.nav .operation-box .nav-btn span {
+.rightNav .nav .operation-box .nav-btn span {
   width: 100%;
   height: 1px;
   background: #222;
@@ -365,19 +379,19 @@ a {
   transition: all .3s;
 }
 
-.nav .operation-box .nav-btn span.n1 {
+.rightNav .nav .operation-box .nav-btn span.n1 {
   top: 2px;
 }
 
-.nav .operation-box .nav-btn span.n2 {
+.rightNav .nav .operation-box .nav-btn span.n2 {
   top: 11px;
 }
 
-.nav .operation-box .nav-btn span.n3 {
+.rightNav .nav .operation-box .nav-btn span.n3 {
   top: 20px;
 }
 
-.nav .operation-box .food-menu {
+.rightNav .nav .operation-box .food-menu {
   background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/menu-icon.png") no-repeat center;
   width: 24px;
   height: 56px;
@@ -387,9 +401,10 @@ a {
   padding-top: 20px;
   color: #fff;
   transform-origin: center 5px;
+  text-decoration: none;
 }
 
-.nav .operation-box .food-menu:hover {
+.rightNav .nav .operation-box .food-menu:hover {
   animation: rotate .5s infinite alternate;
 }
 
@@ -417,7 +432,7 @@ a {
   }
 }
 
-.nav .navDown {
+.rightNav .nav .navDown {
   width: 64px;
   height: 64px;
   position: absolute;
@@ -426,12 +441,12 @@ a {
   margin-right: -32px;
 }
 
-.nav .navDown a {
+.rightNav .nav .navDown a {
   display: block;
   width: 100%;
 }
 
-.nav .navDown a img {
+.rightNav .nav .navDown a img {
   border-radius: 50%;
   width: 100%;
 }
