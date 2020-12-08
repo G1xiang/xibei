@@ -169,7 +169,7 @@ body {
       .rightNav .nav .operation-box .food-menu {
         background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/menu-icon.png") no-repeat center;
         width: 24px;
-        height: 56px;
+        height: 75px;
         font-size: 17px;
         text-align: center;
         background-size: contain;
@@ -252,55 +252,45 @@ body {
   height: 600px; }
   .allbox .news a {
     text-decoration: none; }
-  .allbox .news .ellipsis {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    width: 527px; }
-  .allbox .news .meida-img {
-    width: 100%;
-    padding-bottom: 50.5%;
-    background-size: cover; }
-  .allbox .news .mediaBoxleft {
-    border-right: 1px solid #ccc;
-    width: 50%; }
-  .allbox .news .front2 {
-    width: 1116px;
-    border-bottom: 1px solid #ccc;
-    border-top: 1px solid #ccc;
-    margin: 0 auto; }
-  .allbox .news .front2 .mediaBox {
+  .allbox .news .le {
     float: left;
+    border-right: 1px solid #ccc; }
+  .allbox .news .r {
+    float: right; }
+  .allbox .news .front2 {
+    width: 93%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden; }
+  .allbox .news .front2 .mediaBox {
     width: 50%;
-    height: 100%;
     padding: 50px;
-    box-sizing: border-box;
     text-align: center; }
+  .allbox .news .front2 .mediaBox div {
+    width: 100%;
+    height: 375px; }
   .allbox .news .front2 .mediaBox div a {
-    overflow: hidden; }
+    width: 100%;
+    height: 374px; }
   .allbox .news .front2 .mediaBox div a .current {
-    background: url("http://www.xibei.com.cn/sites/default/files/cover/guan_wang_feng_mian_tu_.jpg");
-    background-size: 457px 230px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    overflow: hidden; }
+    height: 265px;
+    background: url(http://www.xibei.com.cn/sites/default/files/cover/guan_wang_feng_mian_tu_.jpg);
+    background-size: cover;
+    background-position: center center; }
   .allbox .news .front2 .mediaBox div a .current2 {
+    height: 265px;
     background: url("http://www.xibei.com.cn/sites/default/files/styles/event_cover/public/cover/guan_wang__0.jpg?itok=OmbhItnh");
-    background-size: 457px 230px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    overflow: hidden; }
+    background-size: 100% 100%; }
   .allbox .news .front2 .mediaBox div a .meida-main {
     padding-top: 50px;
-    color: red;
     font-size: 24px; }
   .allbox .news .front2 .mediaBox div a .meida-main h2 {
-    font-size: 24px;
     color: #222; }
   .allbox .news .front2 .mediaBox div a .meida-main p {
     font-size: 14px;
     padding-top: 15px;
-    color: #8d8d8d; }
+    color: #8d8d8d;
+    line-height: 14px; }
   .allbox .news .front2 .mediaBox div a .meida-main p .time {
     line-height: 20px;
     font-size: 14px;
@@ -309,11 +299,11 @@ body {
     padding-right: 15px;
     display: inline-block;
     border-right: 1px solid #8d8d8d; }
-  .allbox .news .front2 .mediaBox a {
+  .allbox .news .front2 .mediaBox .more {
     color: #000;
     margin-top: 50px;
     font-size: 14px;
-    display: inline-block; }
+    display: block; }
 
 .allbox .cate {
   height: 1000px;
@@ -537,7 +527,8 @@ body {
     transform: rotate(-45deg); }
 
 .allbox .footer {
-  width: 100%;
+  width: 93%;
+  min-width: 1200px;
   font-size: 14px;
   color: #8d8d8d;
   overflow: hidden; }
@@ -569,14 +560,18 @@ body {
             width: 100%; }
             .allbox .footer .all .footer-top .footer-right ul li dl dt a {
               text-decoration: none;
+              text-align: center;
               color: #222; }
           .allbox .footer .all .footer-top .footer-right ul li dl dd {
+            text-align: center;
+            margin: 0 auto;
             font-size: 12px;
             font-family: PingFangHK-Regular;
             line-height: 200%; }
             .allbox .footer .all .footer-top .footer-right ul li dl dd a {
               text-decoration: none;
-              color: #8d8d8d; }
+              color: #8d8d8d;
+              text-align: center; }
           .allbox .footer .all .footer-top .footer-right ul li dl .c2 {
             width: 230px;
             overflow: hidden; }
@@ -586,33 +581,3 @@ body {
   .allbox .footer .all .footer-bottom p {
     float: right;
     font-size: 12px; }
-
-.allbox .my_class {
-  position: absolute;
-  z-index: 2;
-  display: flex;
-  padding: 0 7%;
-  width: 100%;
-  margin-top: 100px;
-  flex-direction: row;
-  justify-content: space-around; }
-
-.allbox .my_class_0 {
-  font-size: 40px;
-  color: #FFFFFF;
-  text-align: center;
-  margin-bottom: 60px; }
-
-.allbox .my_class_1 {
-  color: #fff;
-  transition: all 0.4s;
-  text-decoration: none; }
-
-.allbox .my_class_2 {
-  list-style: none;
-  margin-left: 38px; }
-
-.allbox .my_class_3 {
-  height: 1px;
-  width: 0;
-  background: #fff; }

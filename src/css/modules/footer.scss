@@ -1,5 +1,6 @@
 .footer{
-    width: 100%;
+    width: 93%;
+    min-width: 1200px;
     font-size: 14px;
     color: #8d8d8d;
     overflow: hidden;
@@ -42,11 +43,14 @@
                                     width: 100%;
                                     a{
                                         text-decoration: none;
+                                        text-align: center;
                                         color: #222;
                                     }
                                     
                                 }
                                 dd{
+                                    text-align: center;
+                                    margin: 0 auto;
                                     font : {
                                         size : 12px;
                                         family : PingFangHK-Regular;
@@ -56,6 +60,7 @@
                                     a{
                                         text-decoration: none;
                                         color: #8d8d8d;
+                                        text-align: center;
                                     }
 
                                 }

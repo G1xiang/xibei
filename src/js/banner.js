@@ -1,5 +1,5 @@
 var scrollFunc=function(e){
-    console.log(e.wheelDelta);
+    // console.log(e.wheelDelta);
     if(e.wheelDelta<0){
         console.log(1)
         $('#box1').css({"top":"-100%"})
