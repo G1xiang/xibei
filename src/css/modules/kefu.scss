@@ -1,0 +1,46 @@
+*{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+a{text-decoration: none;}
+.banner {width: 100%;height: 500px;
+    min-width: 1500px;
+    background: url(http://www.xibei.com.cn/sites/all/themes/xibei/images/xibei-kefu.jpg) no-repeat center;
+    background-size: 100%,100%;
+h1{
+    font-weight: normal;
+    font-family:'方正粗黑宋简体';
+    font-size: 140px;
+    letter-spacing: -20px;
+    text-align: left;
+    line-height: 140px;
+    margin-bottom: 15px;
+    padding-top: 150px;
+    padding-left: 78px;
+    color: #fff;
+
+}
+p{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 100px;
+    text-align: left;
+    font-family: PingFangSC-Regular, PingFangHK-Regular, SourceHanSansCN-Normal, "Source Han Sans CN", "Microsoft YaHei", 微软雅黑, "Microsoft YaHei UI", Helvetica, Tahoma, Arial, 宋体, sans-serif;
+}
+}
+@import './foot.scss';
+@import './rightNav.scss';
+.service-main{
+    width: 100%;
+    text-align:center;
+    padding-top: 50px;
+    h2{
+        font-size: 58px;
+        font-weight: 300;
+    }
+    p{
+        font-size: 27px;
+        margin: 50px;
+    }
+    .chat{width: 160px;height: 50px;border-radius: 50px;display:inline-block;line-height: 50px;background: #E62511;margin: 40px;color: #fff;font-size: 20px;text-decoration: none;}
+
+}
+
