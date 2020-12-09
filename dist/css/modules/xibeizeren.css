@@ -185,10 +185,10 @@ a {
   outline: none; }
 
 .footer {
-  width: 90%;
+  width: 93%;
+  min-width: 1200px;
   font-size: 14px;
   color: #8d8d8d;
-  border-top: 1px solid #e3e3e3;
   overflow: hidden; }
   .footer .all .footer-top {
     border-bottom: 1px solid #e3e3e3;
@@ -218,14 +218,18 @@ a {
             width: 100%; }
             .footer .all .footer-top .footer-right ul li dl dt a {
               text-decoration: none;
+              text-align: center;
               color: #222; }
           .footer .all .footer-top .footer-right ul li dl dd {
+            text-align: center;
+            margin: 0 auto;
             font-size: 12px;
             font-family: PingFangHK-Regular;
             line-height: 200%; }
             .footer .all .footer-top .footer-right ul li dl dd a {
               text-decoration: none;
-              color: #8d8d8d; }
+              color: #8d8d8d;
+              text-align: center; }
           .footer .all .footer-top .footer-right ul li dl .c2 {
             width: 230px;
             overflow: hidden; }
@@ -250,10 +254,6 @@ a {
     position: fixed;
     right: 0;
     top: 0;
-<<<<<<< HEAD
-=======
-    border: 1px solid #ccc;
->>>>>>> 7b0ffbdf4030296da997e73ba8386ae692296b7b
     background: #fff; }
     .rightNav .nav .navTop {
       width: 100%; }
@@ -310,15 +310,7 @@ a {
       .rightNav .nav .operation-box .food-menu {
         background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/menu-icon.png") no-repeat center;
         width: 24px;
-<<<<<<< HEAD
         height: 75px;
-=======
-<<<<<<< HEAD
-        height: 56px;
-=======
-        height: 75px;
->>>>>>> 0e1bb2768814585f8780e0b381aea0a0ae30a3f7
->>>>>>> 7b0ffbdf4030296da997e73ba8386ae692296b7b
         font-size: 17px;
         text-align: center;
         background-size: contain;
