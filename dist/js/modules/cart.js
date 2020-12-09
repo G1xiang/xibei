@@ -6,10 +6,11 @@ define(['jquery'],function($){
            
             <ul>
                 <li>
-                    <a href="#">
+                    <a id="outter" href="#">
                         <div><img src="${v.foodsImg}" alt=""></div>
                         <h3>${v.foodsName}</h3>
                         <p>￥${v.foodsPrice}</p>
+                        <span>加入购物车</span>
                     </a>
                 </li>
             </ul>

@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/modules/menu.css">
-    <script src="../js/jquery.js"></script>
-    <script src="../js/require.js" data-main="../js/menu.js"></script>
+    <link rel="stylesheet" href="../css/modules/realcart.css">
+    
 </head>
 <body>
     <aside class="rightNav">
@@ -18,7 +17,7 @@
             </div>
             <div class="operation-box">
                 <a class="service" href="#">&nbsp;</a>
-                <a href="javascript:;" class="position">&nbsp;</a>
+                <a href="#" class="position">&nbsp;</a>
                 <a class="nav-btn" href="#">
                     <span class="n1">&nbsp;</span> 
                     <span class="n2">&nbsp;</span> 
@@ -32,32 +31,11 @@
                 </a>
             </div>
         </div>
-
     </aside>
-    <section>
-        <div class="banner" >
-            <h1>西贝商城</h1>
-            <p>闭着眼睛点，道道都好吃</p>
-         </div>
-     
-         <div class="menu">
-           <!-- <ul>
-                <li>
-                    <a href="#">
-                        <div><img src="http://www.xibei.com.cn/sites/all/themes/xibei/food-story/10daocai/1.jpg" alt=""></div>
-                        <h3>椒麻牛蹄筋</h3>
-                        <p>￥58</p>
-                        <a href="#"><span>加入购物车</span></a>
-                    </a>
-                </li>
-            </ul>-->
-        </div> 
-    
-    
+    <section ></section>
 
-     
-    </section> 
-     <div class="footer">
+
+    <div class="footer">
     <div class="all">
         <div class="footer-top">
             <div class="footer-logo">
@@ -123,70 +101,5 @@
         </div>
     </div>
 </div>
-
-
-     <div id="realcart">
-         <div class="head">
-             <div class="head-logo">
-                 <img src="http://www.xibei.com.cn/sites/all/themes/xibei/images/logo-s.svg" alt="">
-             </div>
-             <div class="head-title">
-                 <p>我的购物车</p>
-             </div>
-         </div>
-         <main>
-             <section class="cball">
-                 <ul>
-                     <li><input type="checkbox">全选</li>
-                     <li>商品</li>
-                     <li>单价</li>
-                     <li>数量</li>
-                     <li>小计</li>
-                     <li>操作</li>
-                 </ul>
-             </section>
-             <section class="cb">
-                 <div class="goodlist">
-                    <ul>
-                        <li><input type="checkbox"></li>
-                        <li><img src="http://www.xibei.com.cn/sites/all/themes/xibei/food-story/10daocai/1.jpg" alt=""></li>
-                        <li>￥59.00</li>
-                        <li>
-                            <button class="reduce">-</button>
-                            <input class="number" type="text" value="1">
-                            <button class="add">+</button>
-                        </li>
-                        <li>￥59.00</li>
-                        <li>
-                            <a href="javascript:;"  class="p-del">删除</a>
-                        </li>
-                    </ul> 
-                 </div>
-             </section>
-         </main>
-         <footer class="foot">
-             <div class="foot-box">
-           <p>总计： ¥  9597.00</p> 
-
-            <i>已选择 3件商品</i>
-            <button>
-                <p>立即结算</p>
-            </button>
-        </div>
-         </footer>
-     </div>
-     <script>
-         var $flag=true;
-         $('.position').on('click',function(){
-            if($flag){
-                $('#realcart').attr('class','show')
-            }else{
-                $('#realcart').attr('class','')
-            }
-
-            $flag=!$flag;
-
-         })
-     </script>
 </body>
 </html>
