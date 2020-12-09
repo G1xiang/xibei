@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 // 所有的数据的接口提供给外面
@@ -51,3 +52,16 @@ define(['jquery'] , function($){
 
 
 });
+=======
+define(['jquery'],function($){
+
+    function getMenuData(){
+        return $.ajax('../api/mock/menu.json');
+    }
+    
+
+    return {
+        getMenuData,
+    }
+})
+>>>>>>> 6c34b475241a566c859496cb7141ebff7476e44b

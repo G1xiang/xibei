@@ -1,0 +1,12 @@
+require.config({
+    paths:{
+        'jquery':'/js/jquery'
+    }
+});
+define(['jquery','../api/server.js',"./modules/cart"],function($,{getMenuData},initMenu){
+    //console.log($);
+    getMenuData().then((res)=>{
+        console.log(res);
+        initMenu(res)
+    })
+})
