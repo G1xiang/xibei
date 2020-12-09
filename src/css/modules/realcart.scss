@@ -2,6 +2,7 @@
 @import './footer.scss';
 *{margin: 0;padding: 0;}
 #realcart{
+    margin: 0 20px 0;
     display: flex;
     flex-direction: column;
     float: left;
@@ -32,7 +33,7 @@
             font-size: 24px;
             float: right;
             
-            color: #f60;
+            color: #E62511;
             line-height: 60px;
         }
     }
@@ -66,6 +67,11 @@
                      align-items: center;
                      li{
                         float: left;
+                        #cart_list_cb{
+                            display: block;
+                            width: 20px;
+                            height: 20px;
+                        }
                         img{
                             width: 50px;
                             height: 50px;
@@ -100,10 +106,10 @@
                 color: #8d8d8d;
            }
             button{
-               
+               color:#fff;
                 width: 80px;
                 height: 40px;
-                background: #f60;
+                background: #E62511;
                 border: 0;
             }
         }
