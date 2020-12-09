@@ -15,18 +15,21 @@ define(['jquery','../js/realcartstorage.js'],function($,{getCartStorage,setCartS
         $('.cart_list').html(
             cartList.map((v,i)=>{
                 return `
-                   <li>${v.foodschecked?'<input type="checkbox" class="cart_list_cb" checked>':'<input id="cb" class="cart_list_cb" type="checkbox">'}</li>
-                   <li><img src="${v.foodsImg}" alt=""><p>${v.foodsName}</p></li>
-                   <li>￥${v.foodsPrice}.00</li>
-                   <li>
-                       <button class="reduce">-</button>
-                       <input class="number" type="text" value="${v.goodsnumber}">
-                       <button class="add">+</button>
-                   </li>
-                   <li>￥${ v.foodsPrice * v.goodsnumber }.00</li>
-                   <li>
-                       <a href="javascript:;"  class="p-del">删除</a>
-                   </li>
+                <li>
+                <div>${v.foodschecked?'<input type="checkbox" class="cart_list_cb" checked>':'<input id="cb" class="cart_list_cb" type="checkbox">'}</div>
+                <div><img src="${v.foodsImg}" alt=""><p>${v.foodsName}</p></div>
+                <div>￥${v.foodsPrice}.00</div>
+                <div>
+                    <button class="reduce">-</button>
+                    <input class="number" type="text" value="${v.foodsnumber}">
+                    <button class="add">+</button>
+                </div>
+                <div>￥${v.foodsnumber*v.foodsPrice}</div>
+                <div>
+                    <a href="javascript:;"  class="p-del">删除</a>
+                </div>
+                </li>
+                   
                 `
             }).join('')
         );
@@ -50,40 +53,41 @@ define(['jquery','../js/realcartstorage.js'],function($,{getCartStorage,setCartS
         var priceAll=0;
         $cartListCb.each(function(i,elem){
             if(elem.checked==true){
-                numberAll+=cartList[i].goodsnumber;
-                priceAll+=cartList[i].goodsnumber*cartList[i].foodsPrice;
+                numberAll+=cartList[i].foodsnumber;
+                priceAll+=cartList[i].foodsnumber*cartList[i].foodsPrice;
             }
         });
+        console.log(numberAll);
         $('.foot-box p').html(`总计： ¥ ${priceAll}.00`);
         $('.foot-box i').html(`已选择${numberAll}件商品`);
     }
     function bindrealCart(){
         var cartList=getCartStorage();
         $('#realcart').on('click','.add',function(){
-            var index=$(this).closest('ul').index();
+            var index=$(this).closest('li').index();
             //console.log(index);
-            cartList[index].goodsnumber++;
+            cartList[index].foodsnumber++;
             setCartStorage(cartList);
             initCart()
         });
         $('#realcart').on('click','.reduce',function(){
-            var index=$(this).closest('ul').index();
+            var index=$(this).closest('li').index();
             
-            if(cartList[index].goodsnumber > 1){
-            cartList[index].goodsnumber--;
+            if(cartList[index].foodsnumber > 1){
+            cartList[index].foodsnumber--;
             } 
             setCartStorage(cartList);
             initCart();
         })
         $('#realcart').on('click','.cart_list_cb',function(){
-            var index=$(this).closest('ul').index();
+            var index=$(this).closest('li').index();
             //console.log(111);
             cartList[index].foodschecked=!cartList[index].foodschecked;
             setCartStorage(cartList);
             initCart();
         })
         $('#realcart').on('click','.p-del',function(){
-            var index=$(this).closest('ul').index();
+            var index=$(this).closest('li').index();
             cartList.splice(index,1);
             setCartStorage(cartList);
             initCart();

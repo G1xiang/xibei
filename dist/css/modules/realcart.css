@@ -203,26 +203,36 @@
     padding: 10px;
     background: #f1f0f0;
     font-size: 12px;
-    flex: 1;
-    overflow: auto;
     color: #8d8d8d; }
     #realcart main .cball {
       margin-top: 10px;
       height: 50px;
       width: 100%; }
       #realcart main .cball ul {
+        padding: 20px 72px;
+        width: 100%;
         list-style: none;
         display: flex;
         justify-content: space-between; }
         #realcart main .cball ul li {
-          float: left; }
+          width: 100%; }
     #realcart main .cb .goodlist ul {
       list-style: none;
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
-      align-items: center; }
+      align-items: center;
+      white-space: rap; }
       #realcart main .cb .goodlist ul li {
-        float: left; }
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 0;
+        padding: 20px 10px; }
+        #realcart main .cb .goodlist ul li div {
+          width: 150px;
+          text-align: center; }
         #realcart main .cb .goodlist ul li #cart_list_cb {
           display: block;
           width: 20px;
