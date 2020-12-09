@@ -709,7 +709,8 @@ body {
 }
 
 .allbox .footer {
-  width: 97%;
+  width: 93%;
+  min-width: 1200px;
   font-size: 14px;
   color: #8d8d8d;
   overflow: hidden;
@@ -757,10 +758,13 @@ body {
 
 .allbox .footer .all .footer-top .footer-right ul li dl dt a {
   text-decoration: none;
+  text-align: center;
   color: #222;
 }
 
 .allbox .footer .all .footer-top .footer-right ul li dl dd {
+  text-align: center;
+  margin: 0 auto;
   font-size: 12px;
   font-family: PingFangHK-Regular;
   line-height: 200%;
@@ -769,6 +773,7 @@ body {
 .allbox .footer .all .footer-top .footer-right ul li dl dd a {
   text-decoration: none;
   color: #8d8d8d;
+  text-align: center;
 }
 
 .allbox .footer .all .footer-top .footer-right ul li dl .c2 {
@@ -784,4 +789,69 @@ body {
 .allbox .footer .all .footer-bottom p {
   float: right;
   font-size: 12px;
+}
+
+.setting-well {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.setting-well .button {
+  position: absolute;
+  top: 42px;
+  right: 42px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.setting-well .button span {
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  overflow: hidden;
+  position: absolute;
+}
+
+.setting-well .button .bt1 {
+  top: 11px;
+  transform: rotate(45deg);
+}
+
+.setting-well .button .bt2 {
+  top: 11px;
+  opacity: 0;
+}
+
+.setting-well .button .bt3 {
+  top: 11px;
+  transform: rotate(-45deg);
+}
+
+.setting-well .tu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 314px;
+  height: 370px;
+  margin-left: -157px;
+  margin-top: -185px;
+}
+
+.setting-well .tu img {
+  width: 314px;
+  height: 314px;
+}
+
+.setting-well .tu p {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 20px;
 }
