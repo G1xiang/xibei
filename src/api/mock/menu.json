@@ -6,7 +6,8 @@
             "foodsName":"椒麻牛蹄筋",
             "foodsPrice":58,
             "chooseStyle":["微辣","辣","特辣"],
-            "foodsInfo":"西贝蒙古牛大骨又出了新口味"
+            "foodsInfo":"西贝蒙古牛大骨又出了新口味",
+            "foodsChecked":true
         },
         {
             "foodsImg":"http://www.xibei.com.cn/sites/all/themes/xibei/food-story/10daocai/2.jpg",
@@ -14,7 +15,8 @@
             "foodsName":"西贝奶酪饼",
             "foodsPrice":30,
             "chooseStyle":["半糖","五分糖","七分糖"],
-            "foodsInfo":"用12斤鲜奶做1斤奶酪"
+            "foodsInfo":"用12斤鲜奶做1斤奶酪",
+            "foodsChecked":true
         },
         {
             "foodsImg":"http://www.xibei.com.cn/sites/all/themes/xibei/food-story/10daocai/3.jpg",
@@ -22,7 +24,8 @@
             "foodsName":"藤椒鸡肉串",
             "foodsPrice":48,
             "chooseStyle":["微辣","辣","特辣"],
-            "foodsInfo":"选用鸡腿肉搭配鸡皮，烤制出来椒香脆"
+            "foodsInfo":"选用鸡腿肉搭配鸡皮，烤制出来椒香脆",
+            "foodsChecked":true
         },
         {
             "foodsImg":"http://www.xibei.com.cn/sites/all/themes/xibei/food-story/10daocai/4.jpg",
@@ -30,7 +33,8 @@
             "foodsName":"油泼沙葱莜面",
             "foodsPrice":39,
             "chooseStyle":["辣","不辣","正常"],
-            "foodsInfo":"选用鸡腿肉搭配鸡皮，烤制出来椒香脆"
+            "foodsInfo":"选用鸡腿肉搭配鸡皮，烤制出来椒香脆",
+            "foodsChecked":true
         },
         {
             "foodsImg":"http://www.xibei.com.cn/sites/all/themes/xibei/food-story/10daocai/5.jpg",
@@ -38,7 +42,8 @@
             "foodsName":"烹香黄金豆",
             "foodsPrice":28,
             "chooseStyle":["椒盐","黑椒","麻辣"],
-            "foodsInfo":"选用鸡腿烹香黄金豆，就像在吃肉"
+            "foodsInfo":"选用鸡腿烹香黄金豆，就像在吃肉",
+            "foodsChecked":true
         },
         {
             "foodsImg":"http://www.xibei.com.cn/sites/all/themes/xibei/food-story/10daocai/6.jpg",
@@ -46,7 +51,8 @@
             "foodsName":"封缸肉烩豆腐",
             "foodsPrice":89,
             "chooseStyle":["蒜香","酱香","香辣"],
-            "foodsInfo":"下饭好菜，越嚼越香"
+            "foodsInfo":"下饭好菜，越嚼越香",
+            "foodsChecked":true
         },
         {
             "foodsImg":"http://www.xibei.com.cn/sites/default/files/caidan/%E9%93%81%E6%9D%BF%E7%82%92%E7%83%A4%E7%BE%8A%E8%82%89.png",
@@ -54,7 +60,8 @@
             "foodsName":"铁板炒羊肉",
             "foodsPrice":69,
             "chooseStyle":["蒜香","酱香","香辣"],
-            "foodsInfo":"          精选草原羔羊肉，在铁板上炒得滋滋作响"
+            "foodsInfo":"精选草原羔羊肉，在铁板上炒得滋滋作响",
+            "foodsChecked":true
         },
         {
             "foodsImg":"http://www.xibei.com.cn/sites/default/files/caidan/%E7%83%A7%E7%BE%8A%E6%A3%92.png",
@@ -62,7 +69,8 @@
             "foodsName":"外酥里嫩烧羊棒",
             "foodsPrice":99,
             "chooseStyle":["蒜香","酱香","香辣"],
-            "foodsInfo":"西贝七星大厨研制，选用草原羊腿腱子骨，先酱后烧"
+            "foodsInfo":"西贝七星大厨研制，选用草原羊腿腱子骨，先酱后烧",
+            "foodsChecked":true
         },
         {
             "foodsImg":"http://www.xibei.com.cn/sites/default/files/caidan/%E9%85%B8%E6%B1%A4%E8%8E%9C%E9%9D%A2%E9%B1%BC%E9%B1%BC.png",
@@ -70,7 +78,10 @@
             "foodsName":"酸汤莜面鱼鱼",
             "foodsPrice":50,
             "chooseStyle":["蒜香","酱香","香辣"],
-            "foodsInfo":"鱼鱼搭配西红柿酸汤，既当主食又当汤"
+            "foodsInfo":"鱼鱼搭配西红柿酸汤，既当主食又当汤",
+            "foodsChecked":true
         }
     ]
 }
+
+
