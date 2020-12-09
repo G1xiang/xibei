@@ -193,6 +193,7 @@
     text-align: left;
     font-family: PingFangSC-Regular, PingFangHK-Regular, SourceHanSansCN-Normal, "Source Han Sans CN", "Microsoft YaHei", 微软雅黑, "Microsoft YaHei UI", Helvetica, Tahoma, Arial, 宋体, sans-serif; }
 
+<<<<<<< HEAD
 .menu ul {
   list-style: none; }
   .menu ul li {
@@ -220,3 +221,30 @@
         height: 50px;
         line-height: 50px;
         font-size: 20px; }
+=======
+.menu ul li {
+  width: 30%;
+  float: left;
+  padding: 50px; }
+  .menu ul li a {
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    height: 300px;
+    border: 2px solid #999;
+    border-radius: 20px;
+    overflow: hidden; }
+    .menu ul li a img {
+      width: 200px;
+      height: 200px; }
+    .menu ul li a h3 {
+      color: #f60;
+      height: 50px;
+      line-height: 50px;
+      font-size: 30px; }
+    .menu ul li a p {
+      color: #f60;
+      height: 50px;
+      line-height: 50px;
+      font-size: 20px; }
+>>>>>>> 7b0ffbdf4030296da997e73ba8386ae692296b7b
