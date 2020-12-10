@@ -498,37 +498,7 @@ position: relative;}
     }
     
     @import './footer.scss';
-    // .my_class{
-    //     position: absolute;
-    //     z-index: 2;
-    //     display: flex;
-    //     padding: 0 7%;
-    //     width: 100%;
-    //     margin-top:100px ;
-    //     flex-direction: row;
-    //     justify-content: space-around;
-    // }
-    // .my_class_0{
-    //     font-size: 40px;
-    //     color: #FFFFFF;
-    //     text-align: center;
-    //     margin-bottom: 60px;
-       
-    // }
-    // .my_class_1{
-    //     color: #fff;
-    //     transition: all 0.4s;
-    //     text-decoration: none;
-    // }
-    // .my_class_2{
-    //     list-style: none;
-    //     margin-left: 38px;
-    // }
-    // .my_class_3{
-    //     height: 1px;
-    //     width: 0;
-    //     background: #fff;
-    // }
+   
 }
 // 生成二维码页
 .setting-well {
@@ -596,3 +566,70 @@ position: relative;}
 //     top:0;
 //     position: fixed;
 // }
+
+.wrapper{
+  display: none;
+  width: 93%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  // opacity: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0,.5);
+  .nav-main{
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    h2{
+            font-size: 40px;
+            color: #FFFFFF;
+            text-align: center;
+            margin-bottom: 60px;
+            a{
+              color: #fff;
+              transition: all 0.4s;
+              text-decoration: none;
+            }
+    }
+    ul{
+       list-style: none;
+        margin-left: 38px;
+        #slide1,#slide2,#slide3{
+          height: 1px;
+          width: 0;
+          background: #fff;
+          transition: all .3s;
+        }
+        li{
+          font-size: 18px;
+          margin-bottom: 25px;
+          position: relative;
+          a{
+            position: relative;
+            color:#fff;
+            display: inline-block;
+            line-height: 24px;
+            padding-bottom: 5px;
+            text-decoration: none;
+          }
+          &:hover #slide1{
+            height: 1px;
+            width: 72px;
+            background: #fff;
+          }
+          &:hover #slide2{
+            height: 1px;
+            width: 72px;
+            background: #fff;
+          }
+          &:hover #slide3{
+            height: 1px;
+            width: 72px;
+            background: #fff;
+          }
+        }
+    }
+  }
+}

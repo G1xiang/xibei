@@ -17,7 +17,7 @@ define(['jquery','../js/realcartstorage.js'],function($,{getCartStorage,setCartS
                 return `
                 <li>
                 <div>${v.foodschecked?'<input type="checkbox" class="cart_list_cb" checked>':'<input id="cb" class="cart_list_cb" type="checkbox">'}</div>
-                <div><img src="${v.foodsImg}" alt=""><p>${v.foodsName}</p></div>
+                <div><img src="${v.foodsImg}" alt=""><p>${v.foodsName}&nbsp;${v.foodsTaste}</p></div>
                 <div>￥${v.foodsPrice}.00</div>
                 <div>
                     <button class="reduce">-</button>
@@ -53,7 +53,7 @@ define(['jquery','../js/realcartstorage.js'],function($,{getCartStorage,setCartS
         var priceAll=0;
         $cartListCb.each(function(i,elem){
             if(elem.checked==true){
-                numberAll+=cartList[i].foodsnumber;
+                numberAll+=Number(cartList[i].foodsnumber);
                 priceAll+=cartList[i].foodsnumber*cartList[i].foodsPrice;
             }
         });
