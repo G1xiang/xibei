@@ -8,7 +8,7 @@ var goods = [{ "imgUrl": "http://www.xibei.com.cn/sites/all/themes/xibei/images/
 }, {"imgUrl": "http://www.xibei.com.cn/sites/all/themes/xibei/images/qrcode-qinzi.jpg",
     "title": "西贝亲子公众号"
 }];
-console.log(as,goods)
+// console.log(as,goods)
 for (var i = 0; i < as.length; i++) {
     as[i].index=i;
     as[i].onmousedown = function () {        
@@ -28,7 +28,7 @@ for (var i = 0; i < as.length; i++) {
         }
          //创建二维码
         function chuangjianb(a) {
-        console.log(goods[a].imgUrl,$('.setting-well'))
+        // console.log(goods[a].imgUrl,$('.setting-well'))
 
             var str = "<div class='tu'>" + "<img src = " + goods[a].imgUrl + ">" + "<p>" + goods[a].title + "</p>" + "</div>"
             $('.setting-well').append(str)

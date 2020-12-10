@@ -1,0 +1,336 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre,section, fieldset, legend, button, input, textarea, th, td, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    outline: none;
+}
+ul,ol{list-style: none;}
+.meiyongdehezi{
+    padding: 60px 0;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    
+
+
+    h2{
+       font-size: 50px;
+       color: #222;
+       line-height: 72px;
+       margin-bottom: 60px;
+       font-weight: normal;
+       .big{
+        font-size: 60px;
+        font-family: "华文行楷";
+        color: #E62511;
+        margin-right: 10px;
+        display: inline-block
+       }
+
+    }
+    .food-zhaopai{
+        overflow: hidden;
+        width: 93%;
+        padding: 0 4%;
+        .food-show{
+            width: 25%;
+            float: left;
+            text-align: center;
+            padding-bottom: 50px;
+            height: 360px;             
+            a{
+                width: 100%;
+                height: 100%;
+                display: block;
+                .tupianhezi{
+                    width: 253px;
+                    height: 226px;                    
+                    position: relative;
+                    margin: 0 auto 20px;
+                    img{
+                        width: 214px;
+                        height: 190px;
+                        transition: all 1s;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        margin: auto;
+                    }
+                    .tu1{                        
+                        opacity: 1;
+                    }
+                    .tu2{
+                        transform: rotate(45deg);
+                        opacity: 0;
+                    }                  
+                }
+                h3{
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #333333;
+                    text-align: center;
+                    font-weight: normal;
+                }
+                h4{
+                    font-size: 14px;
+                    color: #8D8D8D;
+                    transform: translate3d(0,20px,0);
+                    transition: all 0.5s;
+                    opacity: 0;
+                    text-align: center;
+                    font-weight: normal;
+                }
+            }
+            a:hover{
+              .tupianhezi{
+                  .tu1{
+                      
+                    opacity: 0;
+                  }
+                  .tu2{                      
+                    opacity: 1;
+                    transform: rotate(0deg);
+                  }
+              } 
+              h4{
+                opacity: 1;
+                transform: translate3d(0,0px,0);
+              } 
+            }  
+
+        }
+        .burangkan{
+            display: none;
+        }
+    }
+    
+    .red-btn{
+    width: 160px;
+    margin: 0px auto;
+    background: #E62511;
+    border-radius: 100px;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    }
+    .dianji2{
+        display: none;
+    }
+        
+    
+}
+header{
+    width: 93%;
+    height: 500px;
+    background: #44587c;
+    padding: 150px 0 0 7%;
+    box-sizing: border-box;
+    color: #fff;
+    // background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/food1.jpg") ;
+    // background-size: cover;
+    background-position:left center ;
+    background-repeat: no-repeat;
+    transition: all 1s;
+    h1{                        /*西贝美食*/
+        font-size: 140px;
+        font-family: "华文行楷";
+        letter-spacing: -30px;        
+        text-align: left;
+        line-height: 140px;
+        margin-bottom: 10px;
+    }
+    
+    p{                          /*西贝美食下面那行字*/
+        font-size: 30px;
+        padding-left: 10px;
+        text-align: left;
+    }
+}
+
+.fudongleft{
+    width: 93%;
+    height: 440px;
+    background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/dami.jpg");
+    background-size: cover;
+
+    /*overflow: hidden;*/ 
+    .active{
+        width: 560px;
+        height: 248px;
+        // background: #f00;
+        float:right; 
+        width: 560px;
+        height: 248px;
+        position: relative;
+        top: 100px;
+        color: #222;
+        padding-right: 60px; 
+        transition: all 1s;
+        h2{
+            /*浮动内容的标题*/
+            color:#000;
+            font-size:40px;
+            text-align: left;
+            line-height: 64px;
+            font-weight: normal;
+        }
+        p{
+            font-size: 18px;
+            line-height: 30px;
+            text-align: left;
+        } 
+        a{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color:#000;
+        }
+         
+    }
+
+}
+.fudongright{
+    width: 93%;
+    height: 440px;
+    background:url("http://www.xibei.com.cn/sites/all/themes/xibei/images/chufang.jpg");
+    background-size: cover;
+    /*overflow: hidden;*/ 
+    .active{
+        width: 560px;
+        height: 248px;
+        // background: #f00;
+        float:left; 
+        width: 560px;
+        height: 248px;
+        position: relative;
+        top: 98px;
+        left: 130px;
+        color: #fff;
+        padding-right: 60px; 
+        transition: all 1s;
+        h2{
+            /*浮动内容的标题*/
+            color:#fff;
+            font-size:40px;
+            text-align: left;
+            line-height: 64px;
+            font-weight: normal;
+        }
+        p{
+            font-size: 18px;
+            line-height: 30px;
+            text-align: left;
+        } 
+        a{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color:#fff;
+        }
+         
+    }
+
+}
+.fudongleft2{
+    width: 93%;
+    height: 440px;
+    background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/service.jpg");
+    background-size: cover;
+
+    /*overflow: hidden;*/ 
+    .active{
+        width: 560px;
+        height: 248px;
+        // background: #f00;
+        float:right; 
+        width: 560px;
+        height: 248px;
+        position: relative;
+        top: 100px;
+        color: #fff;
+        padding-right: 60px; 
+        transition: all 1s;
+        h2{
+            /*浮动内容的标题*/
+            color:#fff;
+            font-size:40px;
+            text-align: left;
+            line-height: 64px;
+            font-weight: normal;
+        }
+        p{
+            font-size: 18px;
+            line-height: 30px;
+            text-align: left;
+        } 
+        a{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color:#fff;
+        }
+         
+    }
+
+}
+.fudongzhengt{
+    width: 93%;
+    height: 380px;
+    margin: 60px 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background:url("http://www.xibei.com.cn/sites/all/themes/xibei/images/bg.png");
+    background-size: 182px;
+    border-top: 1px solid #ccc;
+    transition: all 1s;
+    h2{
+        font-size: 30px;
+    color: #FFFFFF;
+    line-height: 64px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: normal
+    }
+    .FDbtn{
+        width: 160px;
+        height: 50px;
+        background: #fff;
+        font-size: 18px;
+        color: #DE1803;
+        text-align: center;
+        line-height: 50px;
+        display: block;
+        margin: 0px auto;
+        border-radius: 100px;
+    }
+    .waiwai{
+    width: 480px;
+    height: 456px;
+    background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/xibei_qz.png") no-repeat;
+    background-size: cover;
+    transition: all 1s;
+    top: 250px;
+    opacity: 0.5;
+    right: -20px;
+    transform: rotate(-20deg);
+    transform-origin: center center;
+    position: absolute;
+    }
+}
+@import './footer.scss';
+@import './rightNav.scss';

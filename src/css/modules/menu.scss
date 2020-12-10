@@ -1,4 +1,92 @@
-@import './cart.scss';
+*{margin: 0;padding: 0;}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+.banner {
+    width: 93%;height: 500px;
+    min-width: 1500px;
+    background: url('http://www.xibei.com.cn/sites/all/themes/xibei/images/food-menu-banner@2x.jpg') no-repeat center;
+    background-size: 100%,100%;
+h1{
+    font-weight: normal;
+    font-family:'方正粗黑宋简体';
+    font-size: 140px;
+    letter-spacing: -20px;
+    text-align: left;
+    line-height: 140px;
+    margin-bottom: 15px;
+    padding-top: 150px;
+    padding-left: 78px;
+    color: #fff;
+
+}
+p{
+    color: #fff;
+    
+    font-size: 30px;
+    padding-left: 100px;
+    
+    text-align: left;
+    font-family: PingFangSC-Regular, PingFangHK-Regular, SourceHanSansCN-Normal, "Source Han Sans CN", "Microsoft YaHei", 微软雅黑, "Microsoft YaHei UI", Helvetica, Tahoma, Arial, 宋体, sans-serif;
+}
+}
+.menu{width: 93%;
+    ul{margin-top: 50px;
+        margin-left: 100px;
+        list-style: none;
+        li{
+            margin-top: 50px;
+            width: 30%;
+            position: relative;
+            float: left;
+            a:hover{
+                box-shadow: #666 3px 3px 8px;
+            }
+            a{
+                text-decoration: none;
+                display: block;
+                width: 200px;
+                height: 300px;
+                box-shadow: #999 2px 2px 2px;
+                border-radius: 20px;
+                overflow: hidden;
+                transition: .5s;
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+                h3{
+                    color: #f60;
+                    height: 50px;
+                    line-height: 30px;
+                    font-size: 30px;
+                }
+                p{
+                    color: #f60;
+                    float: left;
+                    height: 50px;
+                    line-height: 50px;
+                    
+                }
+                span{
+                    
+                    height: 40px;
+                    font-size: 20px;
+                    background: #f60;
+                    color: #fff;
+                    width: 90px;
+                    margin-right: 10px;
+                    line-height: 40px;
+                    text-align: center;
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
 @import './rightNav.scss';
 @import './footer.scss';
 .detail-mask{
@@ -124,4 +212,3 @@
     }
     
 }
-@import './navdialog.css'

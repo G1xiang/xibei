@@ -1,0 +1,405 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, section, fieldset, legend, button, input, textarea, th, td, div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body, html {
+  height: 100%; }
+
+a {
+  text-decoration: none;
+  outline: none; }
+
+ul, ol {
+  list-style: none; }
+
+main {
+  width: 93%; }
+  main .about {
+    height: 500px;
+    background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/about.jpg") no-repeat right center;
+    background-size: cover; }
+  main .history {
+    background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/history.jpg") no-repeat center bottom;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    height: 764px;
+    padding: 100px 0 400px; }
+    main .history h2 {
+      font-size: 50px;
+      line-height: 60px;
+      margin-bottom: 20px; }
+    main .history p {
+      font-size: 24px;
+      line-height: 40px;
+      margin: 0 auto 50px; }
+    main .history a {
+      text-decoration: none;
+      color: #fff; }
+      main .history a span {
+        padding-right: 30px;
+        background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/arrow-more-white.svg") no-repeat right center; }
+  main .result {
+    text-align: center;
+    color: #222;
+    padding: 80px 0; }
+    main .result h2 {
+      font-size: 50px;
+      line-height: 60px;
+      margin-bottom: 20px; }
+    main .result p {
+      font-size: 24px;
+      margin-bottom: 80px; }
+    main .result ul {
+      list-style: none;
+      padding: 0 10%;
+      overflow: hidden;
+      margin-bottom: 50px; }
+      main .result ul li {
+        float: left;
+        width: 33.3%;
+        text-align: center; }
+        main .result ul li dt {
+          height: 88px;
+          width: 100%;
+          margin-bottom: 20px; }
+        main .result ul li dd {
+          font-size: 18px;
+          line-height: 150%;
+          color: #8d8d8d; }
+    main .result a {
+      text-decoration: none;
+      color: #222; }
+      main .result a span {
+        padding-right: 30px;
+        background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/arrow-more.svg") no-repeat right center; }
+  main .response {
+    background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/zeren.jpg") no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    main .response h2 {
+      font-size: 50px;
+      line-height: 60px;
+      margin-bottom: 20px; }
+    main .response p {
+      font-size: 24px;
+      margin-bottom: 50px; }
+    main .response a {
+      text-decoration: none;
+      color: #fff; }
+      main .response a span {
+        padding-right: 30px;
+        background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/arrow-more-white.svg") no-repeat right center; }
+  main .active {
+    padding: 40px 0 40px 7.5%;
+    height: 418px; }
+    main .active .newspaper .news .newsmine {
+      float: left;
+      width: 360px;
+      height: 274px;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      border: 1px solid #ccc;
+      box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+      position: relative; }
+      main .active .newspaper .news .newsmine a::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      main .active .newspaper .news .newsmine a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+        z-index: 4;
+        color: #000;
+        padding: 25px;
+        overflow: hidden;
+        box-sizing: border-box; }
+        main .active .newspaper .news .newsmine a .time {
+          font-size: 18px;
+          padding-bottom: 10px;
+          transition: all 0.5s; }
+          main .active .newspaper .news .newsmine a .time strong {
+            font-size: 50px;
+            color: #000;
+            font-weight: normal;
+            margin-right: 5px;
+            transition: all 0.5s; }
+          main .active .newspaper .news .newsmine a .time .years {
+            color: #000;
+            transition: all 0.5s; }
+        main .active .newspaper .news .newsmine a p {
+          font-size: 24px;
+          line-height: 36px;
+          height: 72px;
+          overflow: hidden;
+          transition: all 0.5s; }
+        main .active .newspaper .news .newsmine a .type {
+          display: block;
+          position: absolute;
+          bottom: 25px;
+          left: 25px;
+          width: 90px;
+          height: 34px;
+          background: #E62511;
+          color: #fff;
+          font-size: 18px;
+          line-height: 34px;
+          text-align: center;
+          transition: all 0.5s; }
+        main .active .newspaper .news .newsmine a .typee {
+          background: #b43483; }
+        main .active .newspaper .news .newsmine a .typeee {
+          background: #CA9551; }
+    main .active .newspaper .news .newsmine:hover {
+      background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/bg.png") repeat center center;
+      background-size: 182px; }
+      main .active .newspaper .news .newsmine:hover a {
+        color: #fff; }
+        main .active .newspaper .news .newsmine:hover a .time {
+          color: #fff; }
+          main .active .newspaper .news .newsmine:hover a .time strong {
+            color: #fff; }
+          main .active .newspaper .news .newsmine:hover a .time .years {
+            color: #fff; }
+        main .active .newspaper .news .newsmine:hover a .type {
+          background-color: rgba(0, 0, 0, 0.1); }
+    main .active .newspaper .news .newsminelast {
+      margin-right: 0; }
+    main .active .view-footer .more {
+      margin: 0px auto 10px;
+      display: block;
+      text-align: center;
+      color: #000; }
+
+.footer {
+  width: 93%;
+  min-width: 1200px;
+  font-size: 14px;
+  color: #8d8d8d;
+  overflow: hidden; }
+  .footer .all .footer-top {
+    border-bottom: 1px solid #e3e3e3;
+    padding: 20px 20px 40px 50px; }
+    .footer .all .footer-top .footer-logo {
+      width: 180px;
+      height: 150px;
+      float: left; }
+      .footer .all .footer-top .footer-logo img {
+        width: 100%; }
+    .footer .all .footer-top .footer-right {
+      overflow: hidden;
+      margin-left: 300px; }
+      .footer .all .footer-top .footer-right ul {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        list-style: none; }
+        .footer .all .footer-top .footer-right ul li {
+          text-align: center; }
+          .footer .all .footer-top .footer-right ul li dl dt {
+            color: #222;
+            font-size: 14px;
+            font-family: PingFangHK-Regular;
+            line-height: 14px;
+            margin-bottom: 20px;
+            width: 100%; }
+            .footer .all .footer-top .footer-right ul li dl dt a {
+              text-decoration: none;
+              text-align: center;
+              color: #222; }
+          .footer .all .footer-top .footer-right ul li dl dd {
+            text-align: center;
+            margin: 0 auto;
+            font-size: 12px;
+            font-family: PingFangHK-Regular;
+            line-height: 200%; }
+            .footer .all .footer-top .footer-right ul li dl dd a {
+              text-decoration: none;
+              color: #8d8d8d;
+              text-align: center; }
+          .footer .all .footer-top .footer-right ul li dl .c2 {
+            width: 230px;
+            overflow: hidden; }
+            .footer .all .footer-top .footer-right ul li dl .c2 a {
+              width: 50%;
+              float: left; }
+  .footer .all .footer-bottom p {
+    float: right;
+    font-size: 12px; }
+
+.rightNav {
+  height: 100%;
+  width: 7%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 20; }
+  .rightNav .nav {
+    width: 7%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #fff; }
+    .rightNav .nav .navTop {
+      width: 100%; }
+      .rightNav .nav .navTop a {
+        display: block;
+        width: 100%;
+        text-decoration: none; }
+        .rightNav .nav .navTop a img {
+          width: 100%; }
+    .rightNav .nav .operation-box {
+      width: 28px;
+      height: 140px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -14px;
+      margin-top: -70px; }
+      .rightNav .nav .operation-box a {
+        display: block;
+        cursor: pointer; }
+      .rightNav .nav .operation-box .service {
+        background: url("../../static/icon/shangcheng.png") no-repeat center;
+        width: 100%;
+        height: 28px;
+        background-size: 24px;
+        text-decoration: none; }
+      .rightNav .nav .operation-box .position {
+        background: url("../../static/icon/gouwuche.png") no-repeat center;
+        width: 100%;
+        height: 28px;
+        background-size: 24px;
+        margin: 30px 0;
+        text-decoration: none; }
+      .rightNav .nav .operation-box .nav-btn {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        margin: 0 2px;
+        text-decoration: none; }
+        .rightNav .nav .operation-box .nav-btn span {
+          width: 100%;
+          height: 1px;
+          background: #222;
+          position: absolute;
+          left: 0;
+          overflow: hidden;
+          transition: all .3s; }
+          .rightNav .nav .operation-box .nav-btn span.n1 {
+            top: 2px; }
+          .rightNav .nav .operation-box .nav-btn span.n2 {
+            top: 11px; }
+          .rightNav .nav .operation-box .nav-btn span.n3 {
+            top: 20px; }
+      .rightNav .nav .operation-box .food-menu {
+        background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/menu-icon.png") no-repeat center;
+        width: 24px;
+        height: 75px;
+        font-size: 17px;
+        text-align: center;
+        background-size: contain;
+        padding-top: 20px;
+        color: #fff;
+        transform-origin: center 5px;
+        text-decoration: none; }
+        .rightNav .nav .operation-box .food-menu:hover {
+          animation: rotate .5s infinite alternate; }
+
+@keyframes rotate {
+  from {
+    transform: rotate(-30deg); }
+  15% {
+    transform: rotate(-25deg); }
+  30% {
+    transform: rotate(-15deg); }
+  50% {
+    transform: rotate(0deg); }
+  65% {
+    transform: rotate(20deg); }
+  80% {
+    transform: rotate(35deg); }
+  100% {
+    transform: rotate(45deg); } }
+    .rightNav .nav .navDown {
+      width: 64px;
+      height: 64px;
+      position: absolute;
+      bottom: 10px;
+      right: 50%;
+      margin-right: -32px; }
+      .rightNav .nav .navDown a {
+        display: block;
+        width: 100%; }
+        .rightNav .nav .navDown a img {
+          border-radius: 50%;
+          width: 100%; }
+
+.wrapper {
+  display: none;
+  width: 93%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8); }
+  .wrapper .nav-main {
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .wrapper .nav-main h2 {
+      font-size: 40px;
+      color: #FFFFFF;
+      text-align: center;
+      margin-bottom: 60px; }
+      .wrapper .nav-main h2 a {
+        color: #fff;
+        transition: all 0.4s;
+        text-decoration: none; }
+    .wrapper .nav-main ul {
+      list-style: none;
+      margin-left: 38px; }
+      .wrapper .nav-main ul #slide1, .wrapper .nav-main ul #slide2, .wrapper .nav-main ul #slide3 {
+        height: 1px;
+        width: 0;
+        background: #fff;
+        transition: all .3s; }
+      .wrapper .nav-main ul li {
+        font-size: 18px;
+        margin-bottom: 25px;
+        position: relative; }
+        .wrapper .nav-main ul li a {
+          position: relative;
+          color: #fff;
+          display: inline-block;
+          line-height: 24px;
+          padding-bottom: 5px;
+          text-decoration: none; }
+        .wrapper .nav-main ul li:hover #slide1 {
+          height: 1px;
+          width: 72px;
+          background: #fff; }
+        .wrapper .nav-main ul li:hover #slide2 {
+          height: 1px;
+          width: 72px;
+          background: #fff; }
+        .wrapper .nav-main ul li:hover #slide3 {
+          height: 1px;
+          width: 72px;
+          background: #fff; }

@@ -1,0 +1,122 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fieldset, legend, button, input, textarea, th, td, div,b,span{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+};
+h1, h2, h3, h4, h5, h6{
+    font-size: 100%;
+    font-weight: normal;
+    font-family: PingFangSC-Medium,PingFangHK-Regular,SourceHanSansCN-Normal,"Source Han Sans CN","Microsoft YaHei","微软雅黑","Microsoft YaHei UI",Helvetica,Tahoma,Arial,"\5b8b\4f53",sans-serif;
+}
+.l{float: left;}
+.r{float: right;}
+a{text-decoration: none;}
+
+.header{
+    width: 93%;
+    height: 216px;   
+    border-bottom: 1px solid #ccc;
+    p{
+        padding: 60px 0;
+        text-align: center;
+        font-size: 28px;
+        line-height: 48px;
+        color: #000; 
+        .colorred{
+            color: red;            
+        }
+    }    
+}
+.newsmin{
+    width: 93%;
+    height: 564px;        
+    overflow: hidden;
+    .news-min-left,.news-min-right{        
+        width: 50%;
+        height: 100%;
+        padding: 50px 50px;
+        dl{
+            dt{
+                width: 100%;
+                height: 278px;
+                background:url("http://www.xibei.com.cn/sites/all/themes/xibei/images/bg.png");
+                background-size: 182px;
+                margin-bottom: 60px;
+                position: relative;
+                overflow: hidden;
+                .show{
+                    width: 381px;
+                    height: 362px;                    
+                    position: absolute;                    
+                }
+            }
+            dd{
+                height: 115px;
+                text-align: center;
+                h2{
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 14px;
+                    color: #8d8d8d;
+                    line-height: 20px;
+                    padding-top: 15px;
+                    a{
+                        color: #000;
+                        margin-top: 25px;                        
+                    }
+                }
+            }
+        }
+    }
+    .news-min-left{
+        border-right: 1px solid #ccc;
+        dl{
+            dt{
+                .show{
+                    top:116px;
+                    right: -6px;                   
+                    transform: rotate(-43deg);
+                    opacity: 10;
+                    background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/xibei_qz.png") no-repeat;
+                     background-size: cover;
+                }
+            }
+        }
+
+    }
+    .news-min-right{
+        dl{
+            dt{
+                .show{
+                    width: 337px;
+                    height: 246px;
+                    bottom: 0;
+                    right: 0px;                 
+                    opacity: 10;
+                    background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/xibei_zhaopai.png") no-repeat;
+                     background-size:100%                                    
+                }
+            }
+        }
+    } 
+}
+/*页脚*/
+.footer{
+    width: 100%;
+    height: 252px;
+    border-top: 1px solid #ccc;
+}
+/*侧导航栏*/
+.nav-bar{
+    width: 7%;
+    height: 100%;
+    background: #f00; 
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 12;
+}
+@import './footer.scss';
+@import './rightNav.scss';

@@ -10,7 +10,7 @@ a {
   text-decoration: none; }
 
 .banner {
-  width: 100%;
+  width: 93%;
   height: 500px;
   min-width: 1500px;
   background: url(http://www.xibei.com.cn/sites/all/themes/xibei/images/xibei-kefu.jpg) no-repeat center;
@@ -34,10 +34,10 @@ a {
     font-family: PingFangSC-Regular, PingFangHK-Regular, SourceHanSansCN-Normal, "Source Han Sans CN", "Microsoft YaHei", 微软雅黑, "Microsoft YaHei UI", Helvetica, Tahoma, Arial, 宋体, sans-serif; }
 
 .footer {
-  width: 90%;
+  width: 93%;
+  min-width: 1200px;
   font-size: 14px;
   color: #8d8d8d;
-  border-top: 1px solid #e3e3e3;
   overflow: hidden; }
   .footer .all .footer-top {
     border-bottom: 1px solid #e3e3e3;
@@ -67,14 +67,18 @@ a {
             width: 100%; }
             .footer .all .footer-top .footer-right ul li dl dt a {
               text-decoration: none;
+              text-align: center;
               color: #222; }
           .footer .all .footer-top .footer-right ul li dl dd {
+            text-align: center;
+            margin: 0 auto;
             font-size: 12px;
             font-family: PingFangHK-Regular;
             line-height: 200%; }
             .footer .all .footer-top .footer-right ul li dl dd a {
               text-decoration: none;
-              color: #8d8d8d; }
+              color: #8d8d8d;
+              text-align: center; }
           .footer .all .footer-top .footer-right ul li dl .c2 {
             width: 230px;
             overflow: hidden; }
@@ -120,13 +124,13 @@ a {
         display: block;
         cursor: pointer; }
       .rightNav .nav .operation-box .service {
-        background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/icon-kefu.png") no-repeat center;
+        background: url("../../static/icon/shangcheng.png") no-repeat center;
         width: 100%;
         height: 28px;
         background-size: 24px;
         text-decoration: none; }
       .rightNav .nav .operation-box .position {
-        background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/icon-weizhi.png") no-repeat center;
+        background: url("../../static/icon/gouwuche.png") no-repeat center;
         width: 100%;
         height: 28px;
         background-size: 24px;
@@ -195,8 +199,63 @@ a {
           border-radius: 50%;
           width: 100%; }
 
+.wrapper {
+  display: none;
+  width: 93%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8); }
+  .wrapper .nav-main {
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .wrapper .nav-main h2 {
+      font-size: 40px;
+      color: #FFFFFF;
+      text-align: center;
+      margin-bottom: 60px; }
+      .wrapper .nav-main h2 a {
+        color: #fff;
+        transition: all 0.4s;
+        text-decoration: none; }
+    .wrapper .nav-main ul {
+      list-style: none;
+      margin-left: 38px; }
+      .wrapper .nav-main ul #slide1, .wrapper .nav-main ul #slide2, .wrapper .nav-main ul #slide3 {
+        height: 1px;
+        width: 0;
+        background: #fff;
+        transition: all .3s; }
+      .wrapper .nav-main ul li {
+        font-size: 18px;
+        margin-bottom: 25px;
+        position: relative; }
+        .wrapper .nav-main ul li a {
+          position: relative;
+          color: #fff;
+          display: inline-block;
+          line-height: 24px;
+          padding-bottom: 5px;
+          text-decoration: none; }
+        .wrapper .nav-main ul li:hover #slide1 {
+          height: 1px;
+          width: 72px;
+          background: #fff; }
+        .wrapper .nav-main ul li:hover #slide2 {
+          height: 1px;
+          width: 72px;
+          background: #fff; }
+        .wrapper .nav-main ul li:hover #slide3 {
+          height: 1px;
+          width: 72px;
+          background: #fff; }
+
 .service-main {
-  width: 100%;
+  width: 93%;
   text-align: center;
   padding-top: 50px; }
   .service-main h2 {

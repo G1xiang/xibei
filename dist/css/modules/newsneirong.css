@@ -1,4 +1,9 @@
-@import url(./navdialog.css);
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fieldset, legend, button, input, textarea, th, td, div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 .rightNav {
   height: 100%;
   width: 7%;
@@ -34,13 +39,13 @@
         display: block;
         cursor: pointer; }
       .rightNav .nav .operation-box .service {
-        background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/icon-kefu.png") no-repeat center;
+        background: url("../../static/icon/shangcheng.png") no-repeat center;
         width: 100%;
         height: 28px;
         background-size: 24px;
         text-decoration: none; }
       .rightNav .nav .operation-box .position {
-        background: url("http://www.xibei.com.cn/sites/all/themes/xibei/images/icon-weizhi.png") no-repeat center;
+        background: url("../../static/icon/gouwuche.png") no-repeat center;
         width: 100%;
         height: 28px;
         background-size: 24px;
@@ -109,6 +114,142 @@
           border-radius: 50%;
           width: 100%; }
 
+.wrapper {
+  display: none;
+  width: 93%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8); }
+  .wrapper .nav-main {
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .wrapper .nav-main h2 {
+      font-size: 40px;
+      color: #FFFFFF;
+      text-align: center;
+      margin-bottom: 60px; }
+      .wrapper .nav-main h2 a {
+        color: #fff;
+        transition: all 0.4s;
+        text-decoration: none; }
+    .wrapper .nav-main ul {
+      list-style: none;
+      margin-left: 38px; }
+      .wrapper .nav-main ul #slide1, .wrapper .nav-main ul #slide2, .wrapper .nav-main ul #slide3 {
+        height: 1px;
+        width: 0;
+        background: #fff;
+        transition: all .3s; }
+      .wrapper .nav-main ul li {
+        font-size: 18px;
+        margin-bottom: 25px;
+        position: relative; }
+        .wrapper .nav-main ul li a {
+          position: relative;
+          color: #fff;
+          display: inline-block;
+          line-height: 24px;
+          padding-bottom: 5px;
+          text-decoration: none; }
+        .wrapper .nav-main ul li:hover #slide1 {
+          height: 1px;
+          width: 72px;
+          background: #fff; }
+        .wrapper .nav-main ul li:hover #slide2 {
+          height: 1px;
+          width: 72px;
+          background: #fff; }
+        .wrapper .nav-main ul li:hover #slide3 {
+          height: 1px;
+          width: 72px;
+          background: #fff; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+  font-family: PingFangSC-Medium,PingFangHK-Regular,SourceHanSansCN-Normal,"Source Han Sans CN","Microsoft YaHei","微软雅黑","Microsoft YaHei UI",Helvetica,Tahoma,Arial,"\5b8b\4f53",sans-serif; }
+
+.l {
+  float: left; }
+
+.r {
+  float: right; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.page-wrapper {
+  width: 93%; }
+
+.page-wrapper .min {
+  background: #fff; }
+
+.page-wrapper .min .head {
+  background: url(http://www.xibei.com.cn/sites/all/themes/xibei/images/bg.png);
+  width: 100%;
+  height: 200px;
+  padding: 0 7%;
+  background-size: 182px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.page-wrapper .min .head h2 {
+  font-size: 40px;
+  line-height: 60px;
+  margin-bottom: 10px;
+  text-align: center; }
+
+.page-wrapper .min .head p {
+  color: #fff;
+  text-align: center;
+  font-size: 18px; }
+
+.page-wrapper .min .news-main {
+  width: 860px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 40px 0; }
+
+.page-wrapper .min .news-main p {
+  font-size: 18px;
+  color: #222;
+  text-align: justify;
+  line-height: 150%;
+  text-indent: 2em;
+  margin-bottom: 1.5em; }
+
+.page-wrapper .min .news-main p span {
+  font-size: 10.5pt; }
+
+.page-wrapper .min .news-main p img {
+  max-width: 91%;
+  height: auto; }
+
+.page-wrapper .min .news-main section p {
+  font-size: 18px;
+  color: #222;
+  text-align: justify;
+  line-height: 150%;
+  text-indent: 2em;
+  margin-bottom: 1.5em; }
+
+.page-wrapper .min .news-main section p span {
+  font-size: 10.5pt; }
+
+.page-wrapper .min .news-main ul li a {
+  color: #333; }
+
 .footer {
   width: 93%;
   min-width: 1200px;
@@ -164,104 +305,3 @@
   .footer .all .footer-bottom p {
     float: right;
     font-size: 12px; }
-
-* {
-  margin: 0;
-  padding: 0; }
-
-#realcart {
-  margin: 0 20px 0;
-  display: flex;
-  flex-direction: column;
-  float: left;
-  width: 90%;
-  height: 100%;
-  margin-bottom: 50px;
-  margin-right: 10px; }
-  #realcart .head {
-    width: 100%;
-    height: 60px;
-    background: #fff;
-    text-align: center; }
-    #realcart .head .head-logo {
-      float: left;
-      width: 8%;
-      margin-top: 5px;
-      margin-left: 5px; }
-      #realcart .head .head-logo img {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%; }
-    #realcart .head .head-title {
-      height: 100%;
-      width: 80%;
-      font-size: 24px;
-      float: right;
-      color: #E62511;
-      line-height: 60px; }
-  #realcart main {
-    width: 100%;
-    padding: 10px;
-    background: #f1f0f0;
-    font-size: 12px;
-    color: #8d8d8d; }
-    #realcart main .cball {
-      margin-top: 10px;
-      height: 50px;
-      width: 100%; }
-      #realcart main .cball ul {
-        padding: 20px 72px;
-        width: 100%;
-        list-style: none;
-        display: flex;
-        justify-content: space-between; }
-        #realcart main .cball ul li {
-          width: 100%; }
-    #realcart main .cb .goodlist ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      white-space: rap; }
-      #realcart main .cb .goodlist ul li {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 10px 0;
-        padding: 20px 10px;
-        text-align: center; }
-        #realcart main .cb .goodlist ul li div {
-          width: 150px;
-          text-align: center; }
-        #realcart main .cb .goodlist ul li #cart_list_cb {
-          display: block;
-          width: 20px;
-          height: 20px; }
-        #realcart main .cb .goodlist ul li img {
-          width: 50px;
-          height: 50px; }
-        #realcart main .cb .goodlist ul li .number {
-          width: 50px;
-          text-align: center; }
-        #realcart main .cb .goodlist ul li a {
-          text-decoration: none;
-          color: #8d8d8d; }
-  #realcart .foot {
-    width: 100%;
-    height: 60px;
-    background: #fff; }
-    #realcart .foot .foot-box {
-      float: right;
-      margin-top: 10px; }
-      #realcart .foot .foot-box p {
-        color: #8d8d8d; }
-      #realcart .foot .foot-box i {
-        color: #8d8d8d; }
-      #realcart .foot .foot-box button {
-        color: #fff;
-        width: 80px;
-        height: 40px;
-        background: #E62511;
-        border: 0; }

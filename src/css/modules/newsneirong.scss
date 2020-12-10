@@ -1,0 +1,107 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fieldset, legend, button, input, textarea, th, td, div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import './rightNav.scss';
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+  font-family: PingFangSC-Medium,PingFangHK-Regular,SourceHanSansCN-Normal,"Source Han Sans CN","Microsoft YaHei","微软雅黑","Microsoft YaHei UI",Helvetica,Tahoma,Arial,"\5b8b\4f53",sans-serif;
+}
+
+.l {
+  float: left;
+}
+
+.r {
+  float: right;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-wrapper {
+  width: 93%;
+}
+
+.page-wrapper .min {
+  background: #fff;
+}
+
+.page-wrapper .min .head {
+  background: url(http://www.xibei.com.cn/sites/all/themes/xibei/images/bg.png);
+  width: 100%;
+  height: 200px;
+  padding: 0 7%;
+  background-size: 182px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-wrapper .min .head h2 {
+  font-size: 40px;
+  line-height: 60px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.page-wrapper .min .head p {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+}
+
+.page-wrapper .min .news-main {
+  width: 860px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.page-wrapper .min .news-main p {
+  font-size: 18px;
+  color: #222;
+  text-align: justify;
+  line-height: 150%;
+  text-indent: 2em;
+  margin-bottom: 1.5em;
+}
+
+.page-wrapper .min .news-main p span {
+  font-size: 10.5pt;
+}
+
+.page-wrapper .min .news-main p img {
+  max-width: 91%;
+  height: auto;
+}
+
+.page-wrapper .min .news-main section p {
+  font-size: 18px;
+  color: #222;
+  text-align: justify;
+  line-height: 150%;
+  text-indent: 2em;
+  margin-bottom: 1.5em;
+}
+
+.page-wrapper .min .news-main section p span {
+  font-size: 10.5pt;
+}
+
+.page-wrapper .min .news-main ul li a {
+  color: #333;
+}
+
+
+@import './footer.scss';

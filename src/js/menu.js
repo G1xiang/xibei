@@ -60,6 +60,50 @@ define(['jquery','../api/server.js',"./modules/cart"],function($,{getMenuData},i
             $('.taste').children().removeClass('active')
             $(this).addClass('active')
         })
+        $('.add').children().eq(1).on('click',function(){
+            let taste=$('.active').html()
+            if(taste==undefined){
+                alert('请选择一种口味')
+            }
+            else{
+                // 选择口味之后
+                if(window.localStorage.length!=0){
+                    // 本地存储不为空
+                    var storage=window.localStorage;
+                    var jsonData=JSON.parse(storage.getItem("cartList"))
+                    let arr=[]
+                    for(i=0;i<jsonData.length;i++){
+                    console.log(jsonData[i].foodsTaste,taste,jsonData[i].foodsName,details.foodsName)
+                        // 遍历jsondata
+                        jsonData[i].index=i
+                        if(jsonData[i].foodsName==details.foodsName&&jsonData[i].foodsTaste==taste){
+                            jsonData[i].foodsnumber=parseInt($('.numberSelect').children().eq(2).val())+parseInt(jsonData[i].foodsnumber)
+                            storage.cartList=JSON.stringify(jsonData)
+                            arr=[]
+                            break
+                        }
+                        else{
+                            arr.push({"foodsName":details.foodsName,"foodsImg":details.foodsImg,"foodsPrice":details.foodsPrice,"foodsnumber":parseInt($('.numberSelect').children().eq(2).val()),"foodschecked":true,"foodsTaste":taste})
+                        }
+                    }
+                    console.log(arr)
+                    if(arr[0]!=undefined){
+                        jsonData.push(arr[0])
+                        storage.cartList=JSON.stringify(jsonData)   
+                    }
+                    else{
+                        storage.cartList=JSON.stringify(jsonData)   
+                    }
+
+                }
+                else{
+                    var storage=window.localStorage;
+                    var jsonData=[{"foodsName":details.foodsName,"foodsImg":details.foodsImg,"foodsPrice":details.foodsPrice,"foodsnumber":parseInt($('.numberSelect').children().eq(2).val()),"foodschecked":true,"foodsTaste":taste}]
+                    storage.cartList=JSON.stringify(jsonData)
+                }
+                window.location.replace('./cart.html')
+            }
+        })
         $('.add').children().eq(0).on('click',function(){
             let taste=$('.active').html()
             if(taste==undefined){
@@ -83,7 +127,7 @@ define(['jquery','../api/server.js',"./modules/cart"],function($,{getMenuData},i
                             break
                         }
                         else{
-                            arr.push({"foodsName":details.foodsName,"foodsImg":details.foodsImg,"foodsPrice":details.foodsPrice,"foodsnumber":parseInt($('.numberSelect').children().eq(2).val()),"foodsChecked":"true","foodsTaste":taste})
+                            arr.push({"foodsName":details.foodsName,"foodsImg":details.foodsImg,"foodsPrice":details.foodsPrice,"foodsnumber":parseInt($('.numberSelect').children().eq(2).val()),"foodschecked":true,"foodsTaste":taste})
                         }
                     }
                     console.log(arr)
@@ -98,7 +142,7 @@ define(['jquery','../api/server.js',"./modules/cart"],function($,{getMenuData},i
                 }
                 else{
                     var storage=window.localStorage;
-                    var jsonData=[{"foodsName":details.foodsName,"foodsImg":details.foodsImg,"foodsPrice":details.foodsPrice,"foodsnumber":parseInt($('.numberSelect').children().eq(2).val()),"foodsChecked":"true","foodsTaste":taste}]
+                    var jsonData=[{"foodsName":details.foodsName,"foodsImg":details.foodsImg,"foodsPrice":details.foodsPrice,"foodsnumber":parseInt($('.numberSelect').children().eq(2).val()),"foodschecked":true,"foodsTaste":taste}]
                     storage.cartList=JSON.stringify(jsonData)
                 }
                 alert('添加成功！')

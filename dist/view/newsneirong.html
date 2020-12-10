@@ -4,9 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/newsneirong.css">
+    <link rel="stylesheet" href="../css/modules/newsneirong.css">
+    <link rel="stylesheet" href="../css/modules/qrcode.css">
+    <script src="../js/jquery.js"></script>
 </head>
 <body>
+    <!-- 侧边栏 -->
+<aside class="rightNav">
+    <div class="nav">
+        <div class="navTop">
+            <a href="../view/index.html">
+                <img src="http://www.xibei.com.cn/sites/all/themes/xibei/images/logo-s.svg" alt="">
+            </a>
+        </div>
+        <div class="operation-box">
+            <a class="service" href="./menu.html">&nbsp;</a>
+            <a href="./cart.html" class="position">&nbsp;</a>
+            <a class="nav-btn" href="javascript:;">
+                <span class="n1">&nbsp;</span> 
+                <span class="n2">&nbsp;</span> 
+                <span class="n3">&nbsp;</span> 
+            </a> 
+            <a class="food-menu" href="./menu.html">菜单</a>
+        </div>
+        <div class="navDown">
+            <a href="../view/index.html">
+                <img src="http://www.xibei.com.cn/sites/all/themes/xibei/images/logo-s.svg" alt="">
+            </a>
+        </div>
+    </div>
+</aside>
+<!-- 菜单 -->
+<div class="wrapper">
+    <div class="nav-main">
+        <div class="main-1">
+            <h2><a href="./xibeipinzhi.html">寻找美食</a></h2>
+            <ul>
+                <li class="list1"><a href="./xibeipinzhi.html">吃招牌菜</a>
+                    <div id="slide1"></div>
+                </li>
+                <li class="list1"><a href="./menu.html">看看菜单</a>
+                    <div id="slide1"></div>
+                </li>
+                <li class="list1"><a href="./xibeipinzhi.html">西贝品质</a>
+                    <div id="slide1"></div>
+                </li>
+                <li class="list1"><a href="./newsneirong.html">美食故事</a>
+                    <div id="slide1"></div>
+                </li>
+            </ul>
+
+        </div>
+        <div class="main-2">
+            <h2><a href="./jiaruxibei.html">联系互动</a></h2>
+            <ul>
+                <li class="list2"><a href="./xibeimendian.html">门店信息</a>
+                    <div id="slide2"></div>
+                </li>
+                <li class="list2"><a href="./jiaruxibei.html">加入我们</a>
+                    <div id="slide2"></div>
+                </li>
+                <li class="list2"><a href="./kefu.html">在线客服</a>
+                    <div id="slide2"></div>
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="main-3">
+            <h2><a href="./xibei-about.html">了解西贝</a></h2>
+            <ul>
+                <li class="list3"><a href="./newsneirong.html">西贝活动</a>
+                    <div id="slide3"></div>
+                </li>
+                <li class="list3"><a href="./newsneirong.html">西贝新闻</a>
+                    <div id="slide3"></div>
+                </li>
+                <li class="list3"><a href="./xibeizeren.html">西贝故事</a>
+                    <div id="slide3"></div>
+                </li>
+                <li class="list3"><a href="./newsneirong.html">西贝英雄</a>
+                    <div id="slide3"></div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+ 
     <div class="page-wrapper">
         <div class="min">
             <div class="head">
@@ -37,8 +122,75 @@
             </div>
         </div>
     </div>
-    <footer>
-        <div class="footer-top"></div>
-    </footer>
+    <div class="footer">
+    <div class="all">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="http://www.xibei.com.cn/sites/all/themes/xibei/images/logo-footer.jpg" alt="">
+            </div>
+            <div class="footer-right">
+                <ul class="link-box">
+                    <li>
+                        <dl>
+                        <dt><a href="./menu.html">寻找美食</a></dt>
+                        <dd><a href="./menu.html">吃招牌菜</a></dd>
+                        <dd><a href="./menu.html">看看菜单</a></dd>
+                        <dd><a href="./xibeipinzhi.html">西贝品质</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="./jiaruxibei.html">联系互动</a></dt>
+                            <dd><a href="./xibeimendian.html">门店信息</a></dd>
+                            <dd><a href="./kefu.html">在线客服</a></dd>
+                            <dd><a href="./jiaruxibei.html">加入我们</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="./xibei-about.html">了解西贝</a></dt>
+                            <dd><a href="./newsneirong.html">西贝故事</a></dd>
+                            <dd><a href="./newsneirong.html">西贝英雄</a></dd>
+                            <dd><a href="./xibeizeren.html">西贝责任</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>关注我们</dt>
+                            <dd class="c2">
+                                <a href="javascript:;">西贝莜面村公众号</a> 
+                                <a href="javascript:;">西贝品味公众号</a>
+                                <a href="javascript:;">愛心互助金公众号</a>
+                                <a href="javascript:;">官方微博</a>
+                                <a href="javascript:;">甄选商城</a> 
+                                <a href="javascript:;">西贝亲子公众号</a>
+                                </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>联系我们</dt>
+                            <dd class="has-icon"><span><img alt=""
+                                        src="http://www.xibei.com.cn/sites/all/themes/xibei/images/icon-mail.svg"></span> 邮件：<a
+                                    href="mailto:xibei@xibei.com.cn">xibei@xibei.com.cn</a></dd>
+                            <dd class="has-icon"><span><img alt=""
+                                        src="http://www.xibei.com.cn/sites/all/themes/xibei/images/icon-address.svg"></span>
+                                地址：北京市丰台区六里桥北里10号</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                <span>版权所有: 北京西贝餐饮管理有限公司&nbsp;|&nbsp;ICP备案编号：：京ICP备18041195号-1</span>
+            </p>
+        </div>
+    </div>
+</div>
+
+    <script src="../js/modules/footer.js"></script>
+    <script src="../js/modules/rightNav.js"></script>
+
 </body>
 </html>

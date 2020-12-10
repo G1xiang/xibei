@@ -3,7 +3,7 @@ require.config({
         'jquery':'./jquery'
     }
 });
-define(['jquery','../js/realcartstorage.js'],function($,{getCartStorage,setCartStorage}){
+define(['jquery','../js/cartstorage.js'],function($,{getCartStorage,setCartStorage}){
     //console.log($);
     initCart();
     bindrealCart();

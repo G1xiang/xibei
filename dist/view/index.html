@@ -7,9 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/modules/bootstrap.css">
     <link rel="stylesheet" href="../css/modules/style.css">
+    <link rel="stylesheet" href="../css/modules/qrcode.css">
     <script src="../js/jquery.js"></script>
-    <script src="../js/bootstrap.js"></script>
+    <script src="../js/modules/bootstrap.js"></script>
     <script src="../js/banner.js"></script>
+    <!-- <script src="../js/modules/footer.js"></script> -->
 </head>
 
 <body>
@@ -28,30 +30,6 @@
     </div>
     <!-- </header> -->
     <!-- 网页内容部分 -->
-    <aside class="rightNav">
-        <div class="nav">
-            <div class="navTop">
-                <a href="#">
-                    <img src="http://www.xibei.com.cn/sites/all/themes/xibei/images/logo-s.svg" alt="">
-                </a>
-            </div>
-            <div class="operation-box">
-                <a class="service" href="./menu.html">&nbsp;</a>
-                <a href="./realcart.html" class="position">&nbsp;</a>
-                <a class="nav-btn" href="javascript:;">
-                    <span class="n1">&nbsp;</span> 
-                    <span class="n2">&nbsp;</span> 
-                    <span class="n3">&nbsp;</span> 
-                </a> 
-                <a class="food-menu" href="#">菜单</a>
-            </div>
-            <div class="navDown">
-                <a href="#">
-                    <img src="http://www.xibei.com.cn/sites/all/themes/xibei/images/logo-s.svg" alt="">
-                </a>
-            </div>
-        </div>
-    </aside>
     <div class="allbox" id="box2">
         
         <section class="plate">
@@ -191,38 +169,38 @@
                 <ul class="link-box">
                     <li>
                         <dl>
-                        <dt><a href="#">寻找美食</a></dt>
-                        <dd><a href="#">吃招牌菜</a></dd>
-                        <dd><a href="#">看看菜单</a></dd>
-                        <dd><a href="#">西贝品质</a></dd>
+                        <dt><a href="./menu.html">寻找美食</a></dt>
+                        <dd><a href="./menu.html">吃招牌菜</a></dd>
+                        <dd><a href="./menu.html">看看菜单</a></dd>
+                        <dd><a href="./xibeipinzhi.html">西贝品质</a></dd>
                         </dl>
                     </li>
                     <li>
                         <dl>
-                            <dt><a href="/contact">联系互动</a></dt>
-                            <dd><a href="/stores">门店信息</a></dd>
-                            <dd><a href="/online-service">在线客服</a></dd>
-                            <dd><a href="/join-us">加入我们</a></dd>
+                            <dt><a href="./jiaruxibei.html">联系互动</a></dt>
+                            <dd><a href="./xibeimendian.html">门店信息</a></dd>
+                            <dd><a href="./kefu.html">在线客服</a></dd>
+                            <dd><a href="./jiaruxibei.html">加入我们</a></dd>
                         </dl>
                     </li>
                     <li>
                         <dl>
-                            <dt><a href="/about">了解西贝</a></dt>
-                            <dd><a href="/story">西贝故事</a></dd>
-                            <dd><a href="/hero">西贝英雄</a></dd>
-                            <dd><a href="/xibeizeren.html">西贝责任</a></dd>
+                            <dt><a href="./xibei-about.html">了解西贝</a></dt>
+                            <dd><a href="./newsneirong.html">西贝故事</a></dd>
+                            <dd><a href="./newsneirong.html">西贝英雄</a></dd>
+                            <dd><a href="./xibeizeren.html">西贝责任</a></dd>
                         </dl>
                     </li>
                     <li>
                         <dl>
                             <dt>关注我们</dt>
                             <dd class="c2">
-                                <a href="#">西贝莜面村公众号</a> 
-                                <a href="javascript:showQrcode(2)">西贝品味公众号</a>
-                                <a href="javascript:showQrcode(3)">愛心互助金公众号</a>
-                                 <a href="javascript:showQrcode(4)">官方微博</a>
-                                  <a href="javascript:showQrcode(5)">甄选商城</a> 
-                                  <a href="javascript:showQrcode(7)">西贝亲子公众号</a>
+                                <a href="javascript:;">西贝莜面村公众号</a> 
+                                <a href="javascript:;">西贝品味公众号</a>
+                                <a href="javascript:;">愛心互助金公众号</a>
+                                <a href="javascript:;">官方微博</a>
+                                <a href="javascript:;">甄选商城</a> 
+                                <a href="javascript:;">西贝亲子公众号</a>
                                 </dd>
                         </dl>
                     </li>
@@ -247,37 +225,64 @@
         </div>
     </div>
 </div>
+    
     </div>
-    <div class="wrapper">
+    <!-- 侧边栏 -->
+<aside class="rightNav">
+    <div class="nav">
+        <div class="navTop">
+            <a href="../view/index.html">
+                <img src="http://www.xibei.com.cn/sites/all/themes/xibei/images/logo-s.svg" alt="">
+            </a>
+        </div>
+        <div class="operation-box">
+            <a class="service" href="./menu.html">&nbsp;</a>
+            <a href="./cart.html" class="position">&nbsp;</a>
+            <a class="nav-btn" href="javascript:;">
+                <span class="n1">&nbsp;</span> 
+                <span class="n2">&nbsp;</span> 
+                <span class="n3">&nbsp;</span> 
+            </a> 
+            <a class="food-menu" href="./menu.html">菜单</a>
+        </div>
+        <div class="navDown">
+            <a href="../view/index.html">
+                <img src="http://www.xibei.com.cn/sites/all/themes/xibei/images/logo-s.svg" alt="">
+            </a>
+        </div>
+    </div>
+</aside>
+<!-- 菜单 -->
+<div class="wrapper">
     <div class="nav-main">
         <div class="main-1">
-            <h2><a href="#">寻找美食</a></h2>
+            <h2><a href="./xibeipinzhi.html">寻找美食</a></h2>
             <ul>
-                <li class="list1"><a href="#">吃招牌菜</a>
+                <li class="list1"><a href="./xibeipinzhi.html">吃招牌菜</a>
                     <div id="slide1"></div>
                 </li>
-                <li class="list1"><a href="#">看看菜单</a>
+                <li class="list1"><a href="./menu.html">看看菜单</a>
                     <div id="slide1"></div>
                 </li>
-                <li class="list1"><a href="#">西贝品质</a>
+                <li class="list1"><a href="./xibeipinzhi.html">西贝品质</a>
                     <div id="slide1"></div>
                 </li>
-                <li class="list1"><a href="#">美食故事</a>
+                <li class="list1"><a href="./newsneirong.html">美食故事</a>
                     <div id="slide1"></div>
                 </li>
             </ul>
 
         </div>
         <div class="main-2">
-            <h2><a href="#">联系互动</a></h2>
+            <h2><a href="./jiaruxibei.html">联系互动</a></h2>
             <ul>
-                <li class="list2"><a href="#">门店信息</a>
+                <li class="list2"><a href="./xibeimendian.html">门店信息</a>
                     <div id="slide2"></div>
                 </li>
-                <li class="list2"><a href="#">加入我们</a>
+                <li class="list2"><a href="./jiaruxibei.html">加入我们</a>
                     <div id="slide2"></div>
                 </li>
-                <li class="list2"><a href="#">在线客服</a>
+                <li class="list2"><a href="./kefu.html">在线客服</a>
                     <div id="slide2"></div>
                 </li>
 
@@ -285,27 +290,28 @@
 
         </div>
         <div class="main-3">
-            <h2><a href="#">了解西贝</a></h2>
+            <h2><a href="./xibei-about.html">了解西贝</a></h2>
             <ul>
-                <li class="list3"><a href="#">西贝活动</a>
+                <li class="list3"><a href="./newsneirong.html">西贝活动</a>
                     <div id="slide3"></div>
                 </li>
-                <li class="list3"><a href="#">西贝新闻</a>
+                <li class="list3"><a href="./newsneirong.html">西贝新闻</a>
                     <div id="slide3"></div>
                 </li>
-                <li class="list3"><a href="#">西贝故事</a>
+                <li class="list3"><a href="./xibeizeren.html">西贝故事</a>
                     <div id="slide3"></div>
                 </li>
-                <li class="list3"><a href="#">西贝英雄</a>
+                <li class="list3"><a href="./newsneirong.html">西贝英雄</a>
                     <div id="slide3"></div>
                 </li>
             </ul>
 
         </div>
     </div>
-</div>;
-    <script src="../js/遮罩层动态.js"></script>
-    <script src="../js/modules/navdialog.js"></script>
+</div>
+    <script src="../js/modules/rightNav.js"></script>
+    <script src="../js/modules/footer.js"></script>
+
 </body>
 
 </html>
