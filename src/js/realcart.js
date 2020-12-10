@@ -11,7 +11,7 @@ define(['jquery','../js/realcartstorage.js'],function($,{getCartStorage,setCartS
     function initCart(){
         var cartList=getCartStorage();
         
-        console.log(cartList);
+        
         $('.cart_list').html(
             cartList.map((v,i)=>{
                 return `
@@ -47,8 +47,7 @@ define(['jquery','../js/realcartstorage.js'],function($,{getCartStorage,setCartS
         }else{
             $cartListCbAll.prop('checked',false);
         }
-
-
+        
         var numberAll=0;
         var priceAll=0;
         $cartListCb.each(function(i,elem){
@@ -57,7 +56,7 @@ define(['jquery','../js/realcartstorage.js'],function($,{getCartStorage,setCartS
                 priceAll+=cartList[i].foodsnumber*cartList[i].foodsPrice;
             }
         });
-        console.log(numberAll);
+        //console.log(numberAll);
         $('.foot-box p').html(`总计： ¥ ${priceAll}.00`);
         $('.foot-box i').html(`已选择${numberAll}件商品`);
     }
@@ -85,6 +84,18 @@ define(['jquery','../js/realcartstorage.js'],function($,{getCartStorage,setCartS
             cartList[index].foodschecked=!cartList[index].foodschecked;
             setCartStorage(cartList);
             initCart();
+        })
+        $('#realcart').on('click','#cart_list_cball',function(){
+            //console.log($(this).prop("checked"));
+            //if($(this).prop("checked")){
+              for(var i=0;i<cartList.length;i++){
+                  cartList[i].foodschecked=$(this).prop("checked")
+              }
+          // }
+           setCartStorage(cartList)
+           initCart();
+           
+
         })
         $('#realcart').on('click','.p-del',function(){
             var index=$(this).closest('li').index();
