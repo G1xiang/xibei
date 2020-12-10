@@ -37,7 +37,7 @@
             </div>
             <div class="operation-box">
                 <a class="service" href="./menu.html">&nbsp;</a>
-                <a href="#" class="position">&nbsp;</a>
+                <a href="./realcart.html" class="position">&nbsp;</a>
                 <a class="nav-btn" href="javascript:;">
                     <span class="n1">&nbsp;</span> 
                     <span class="n2">&nbsp;</span> 
@@ -210,7 +210,7 @@
                             <dt><a href="/about">了解西贝</a></dt>
                             <dd><a href="/story">西贝故事</a></dd>
                             <dd><a href="/hero">西贝英雄</a></dd>
-                            <dd><a href="/responsibility">西贝责任</a></dd>
+                            <dd><a href="/xibeizeren.html">西贝责任</a></dd>
                         </dl>
                     </li>
                     <li>
@@ -249,80 +249,63 @@
 </div>
     </div>
     <div class="wrapper">
-        <div class="nav-main">
-            <div class="main-1">
-                <h2><a href="#">寻找美食</a></h2>
-                <ul>
-                    <li class="list1"><a href="#">吃招牌菜</a>
-                        <div id="slide1"></div>
-                    </li>
-                    <li class="list1"><a href="#">看看菜单</a>
-                        <div id="slide1"></div>
-                    </li>
-                    <li class="list1"><a href="#">西贝品质</a>
-                        <div id="slide1"></div>
-                    </li>
-                    <li class="list1"><a href="#">美食故事</a>
-                        <div id="slide1"></div>
-                    </li>
-                </ul>
-    
-            </div>
-            <div class="main-2">
-                <h2><a href="#">联系互动</a></h2>
-                <ul>
-                    <li class="list2"><a href="#">门店信息</a>
-                        <div id="slide2"></div>
-                    </li>
-                    <li class="list2"><a href="#">加入我们</a>
-                        <div id="slide2"></div>
-                    </li>
-                    <li class="list2"><a href="#">在线客服</a>
-                        <div id="slide2"></div>
-                    </li>
-    
-                </ul>
-    
-            </div>
-            <div class="main-3">
-                <h2><a href="#">了解西贝</a></h2>
-                <ul>
-                    <li class="list3"><a href="#">西贝活动</a>
-                        <div id="slide3"></div>
-                    </li>
-                    <li class="list3"><a href="#">西贝新闻</a>
-                        <div id="slide3"></div>
-                    </li>
-                    <li class="list3"><a href="#">西贝故事</a>
-                        <div id="slide3"></div>
-                    </li>
-                    <li class="list3"><a href="#">西贝英雄</a>
-                        <div id="slide3"></div>
-                    </li>
-                </ul>
-    
-            </div>
+    <div class="nav-main">
+        <div class="main-1">
+            <h2><a href="#">寻找美食</a></h2>
+            <ul>
+                <li class="list1"><a href="#">吃招牌菜</a>
+                    <div id="slide1"></div>
+                </li>
+                <li class="list1"><a href="#">看看菜单</a>
+                    <div id="slide1"></div>
+                </li>
+                <li class="list1"><a href="#">西贝品质</a>
+                    <div id="slide1"></div>
+                </li>
+                <li class="list1"><a href="#">美食故事</a>
+                    <div id="slide1"></div>
+                </li>
+            </ul>
+
+        </div>
+        <div class="main-2">
+            <h2><a href="#">联系互动</a></h2>
+            <ul>
+                <li class="list2"><a href="#">门店信息</a>
+                    <div id="slide2"></div>
+                </li>
+                <li class="list2"><a href="#">加入我们</a>
+                    <div id="slide2"></div>
+                </li>
+                <li class="list2"><a href="#">在线客服</a>
+                    <div id="slide2"></div>
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="main-3">
+            <h2><a href="#">了解西贝</a></h2>
+            <ul>
+                <li class="list3"><a href="#">西贝活动</a>
+                    <div id="slide3"></div>
+                </li>
+                <li class="list3"><a href="#">西贝新闻</a>
+                    <div id="slide3"></div>
+                </li>
+                <li class="list3"><a href="#">西贝故事</a>
+                    <div id="slide3"></div>
+                </li>
+                <li class="list3"><a href="#">西贝英雄</a>
+                    <div id="slide3"></div>
+                </li>
+            </ul>
+
         </div>
     </div>
+</div>;
     <script src="../js/遮罩层动态.js"></script>
-    <script>   
-    var $flag=true; 
-    $('.nav-btn').on('click',function(){
-        
-    if($flag){
-        $('.n1').css('transform', 'rotate(45deg)');
-        $('.n3').css({'transform':'rotate(-45deg)','top':'2px'});
-        $('.n2').css('opacity', 0);
-        $('.wrapper').css("display","block")
-    }else{
-        $('.n1').css('transform', 'rotate(0)');
-        $('.n3').css({'transform':'rotate(0)','top':'20px'});
-        $('.n2').css('opacity', 1);
-        $('.wrapper').css("display","none")
-    }
-    $flag=!$flag;
-})
-    </script>
+    <script src="../js/modules/navdialog.js"></script>
 </body>
 
 </html>

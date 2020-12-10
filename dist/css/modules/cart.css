@@ -199,7 +199,7 @@
     width: 20%;
     float: left;
     padding: 50px; }
-    .menu ul li #outter {
+    .menu ul li a {
       text-decoration: none;
       display: block;
       width: 200px;
@@ -207,20 +207,20 @@
       border: 2px solid #999;
       border-radius: 20px;
       overflow: hidden; }
-      .menu ul li #outter img {
+      .menu ul li a img {
         width: 200px;
         height: 200px; }
-      .menu ul li #outter h3 {
+      .menu ul li a h3 {
         color: #f60;
         height: 50px;
         line-height: 30px;
         font-size: 30px; }
-      .menu ul li #outter p {
+      .menu ul li a p {
         color: #f60;
         float: left;
         height: 50px;
         line-height: 50px; }
-      .menu ul li #outter span {
+      .menu ul li a span {
         height: 40px;
         font-size: 20px;
         background: #f60;
@@ -230,6 +230,5 @@
         line-height: 40px;
         text-align: center;
         display: inline-block;
-        float: right;
         border: 1px solid #ccc;
         border-radius: 10px; }

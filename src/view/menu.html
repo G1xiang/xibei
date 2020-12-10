@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/modules/menu.css">
     <script src="../js/jquery.js"></script>
     <script src="../js/require.js" data-main="../js/menu.js"></script>
+    <!-- <script src="../js/jquery.js"></script> -->
+   
 </head>
 <body>
     <aside class="rightNav">
@@ -18,7 +20,7 @@
             </div>
             <div class="operation-box">
                 <a class="service" href="#">&nbsp;</a>
-                <a href="javascript:;" class="position">&nbsp;</a>
+                <a href="./realcart.html" class="position">&nbsp;</a>
                 <a class="nav-btn" href="#">
                     <span class="n1">&nbsp;</span> 
                     <span class="n2">&nbsp;</span> 
@@ -43,7 +45,23 @@
      
     </section> 
      @include('footer.html')
-
+     <!-- <div class="detail-mask">
+         <div class="food-detail">
+            <dl>
+                <dt class="photo"><img src="http://www.xibei.com.cn/sites/all/themes/xibei/food-story/10daocai/1.jpg" alt=""></dt>
+                <dd>
+                    <ul>
+                        <li><h3>椒麻牛蹄筋</h3></li>
+                        <li><button>a</button><button>b</button><button>c</button></li>
+                        <li><p>￥58</p></li>
+                        <li class="numberSelect"><span>数量</span><button>-</button><input type="text"><button>+</button></li>
+                        <li class="add"><button>加入购物车</button><button>立即购买</button></li>
+                    </ul>
+                </dd>
+            </dl>
+         </div>
+     </div> -->
+@include('navdialog.html');
 
      
      <script>
@@ -59,5 +77,6 @@
 
          })
      </script>
+     <script src="../js/modules/navdialog.js"></script>
 </body>
 </html>
