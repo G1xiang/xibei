@@ -217,9 +217,21 @@
         font-size: 30px; }
       .menu ul li a p {
         color: #f60;
+        float: left;
         height: 50px;
-        line-height: 50px;
-        font-size: 20px; }
+        line-height: 50px; }
+      .menu ul li a span {
+        height: 40px;
+        font-size: 20px;
+        background: #f60;
+        color: #fff;
+        width: 90px;
+        margin-right: 10px;
+        line-height: 40px;
+        text-align: center;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 10px; }
 
 .rightNav {
   height: 100%;

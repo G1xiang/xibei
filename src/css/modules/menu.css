@@ -281,7 +281,7 @@
   padding: 50px;
 }
 
-.menu ul li a {
+.menu ul li #outter {
   text-decoration: none;
   display: block;
   width: 200px;
@@ -291,23 +291,38 @@
   overflow: hidden;
 }
 
-.menu ul li a img {
+.menu ul li #outter img {
   width: 200px;
   height: 200px;
 }
 
-.menu ul li a h3 {
+.menu ul li #outter h3 {
   color: #f60;
   height: 50px;
   line-height: 30px;
   font-size: 30px;
 }
 
-.menu ul li a p {
+.menu ul li #outter p {
   color: #f60;
+  float: left;
   height: 50px;
   line-height: 50px;
+}
+
+.menu ul li #outter span {
+  height: 40px;
   font-size: 20px;
+  background: #f60;
+  color: #fff;
+  width: 90px;
+  margin-right: 10px;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  float: right;
+  border: 1px solid #ccc;
+  border-radius: 10px;
 }
 
 .rightNav {
