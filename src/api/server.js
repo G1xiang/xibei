@@ -1,34 +1,15 @@
-<<<<<<< HEAD
+define(['jquery'],function($){
 
-
-// 所有的数据的接口提供给外面
-define(['jquery'] , function($){
-
-
-    //jquery中的ajax也提供了promise用法
-
-    function getBannerData(){
-        return $.ajax('/api/mock/banner.json');
+    function getMenuData(){
+        return $.ajax('../api/mock/menu.json');
     }
-    function getBanner2Data(){
-        return $.ajax('/api/mock/banner2.json'); 
-    }
-    function getPhoneData(){
-        return $.ajax('/api/mock/phone.json');
-    }
-    function getBookData(){
-        return $.ajax('/api/mock/book.json');
-    }
-    function getPadData(){
-        return $.ajax('/api/mock/pad.json');
-    }
-    function getDetailData(type , id){
+    function getDetailData(id){
         var promise = new Promise(function(resolve,reject){
-            $.ajax(`/api/mock/${type}.json`).then((res)=>{
+            $.ajax(`/api/mock/menu.json`).then((res)=>{
                 //res -> 对应type下的 数据集合
-                for(var i=0;i<res.goods_list.length;i++){
-                    if(res.goods_list[i].goodsId == id){
-                        resolve(res.goods_list[i]);
+                for(var i=0;i<res.foods_list.length;i++){
+                    if(res.foods_list[i].foodsId == id){
+                        resolve(res.foods_list[i]);
                     }
                 }
             });
@@ -36,32 +17,8 @@ define(['jquery'] , function($){
         return promise;
     }
 
-    function actionLogin(){
-        return $.ajax('/api2/login.php');
-    }
-
-    return {
-        getBannerData,
-        getBanner2Data,
-        getPhoneData,
-        getBookData,
-        getPadData,
-        getDetailData,
-        actionLogin
-    }
-
-
-});
-=======
-define(['jquery'],function($){
-
-    function getMenuData(){
-        return $.ajax('../api/mock/menu.json');
-    }
-    
-
     return {
         getMenuData,
+        getDetailData
     }
 })
->>>>>>> 6c34b475241a566c859496cb7141ebff7476e44b

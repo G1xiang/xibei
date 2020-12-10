@@ -54,7 +54,7 @@
             "foodsName":"铁板炒羊肉",
             "foodsPrice":69,
             "chooseStyle":["蒜香","酱香","香辣"],
-            "foodsInfo":"          精选草原羔羊肉，在铁板上炒得滋滋作响"
+            "foodsInfo":"精选草原羔羊肉，在铁板上炒得滋滋作响"
         },
         {
             "foodsImg":"http://www.xibei.com.cn/sites/default/files/caidan/%E7%83%A7%E7%BE%8A%E6%A3%92.png",
@@ -62,7 +62,7 @@
             "foodsName":"外酥里嫩烧羊棒",
             "foodsPrice":99,
             "chooseStyle":["蒜香","酱香","香辣"],
-            "foodsInfo":"西贝七星大厨研制，选用草原羊腿腱子骨，先酱后烧"
+            "foodsInfo":"西贝七星大厨研制，选用草原羊腿腱子骨."
         },
         {
             "foodsImg":"http://www.xibei.com.cn/sites/default/files/caidan/%E9%85%B8%E6%B1%A4%E8%8E%9C%E9%9D%A2%E9%B1%BC%E9%B1%BC.png",
