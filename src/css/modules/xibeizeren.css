@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(d:\qianfeng\二阶段\千锋学习\项目\xibei\src\css\modules\navdialog.css);
 * {
   margin: 0;
   padding: 0;
@@ -217,10 +218,10 @@ a {
 }
 
 .footer {
-  width: 90%;
+  width: 93%;
+  min-width: 1200px;
   font-size: 14px;
   color: #8d8d8d;
-  border-top: 1px solid #e3e3e3;
   overflow: hidden;
 }
 
@@ -266,10 +267,13 @@ a {
 
 .footer .all .footer-top .footer-right ul li dl dt a {
   text-decoration: none;
+  text-align: center;
   color: #222;
 }
 
 .footer .all .footer-top .footer-right ul li dl dd {
+  text-align: center;
+  margin: 0 auto;
   font-size: 12px;
   font-family: PingFangHK-Regular;
   line-height: 200%;
@@ -278,6 +282,7 @@ a {
 .footer .all .footer-top .footer-right ul li dl dd a {
   text-decoration: none;
   color: #8d8d8d;
+  text-align: center;
 }
 
 .footer .all .footer-top .footer-right ul li dl .c2 {
@@ -311,7 +316,6 @@ a {
   position: fixed;
   right: 0;
   top: 0;
-  border: 1px solid #ccc;
   background: #fff;
 }
 

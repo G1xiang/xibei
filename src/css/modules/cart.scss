@@ -20,16 +20,19 @@ h1{
 }
 p{
     color: #fff;
+    
     font-size: 30px;
     padding-left: 100px;
+    
     text-align: left;
     font-family: PingFangSC-Regular, PingFangHK-Regular, SourceHanSansCN-Normal, "Source Han Sans CN", "Microsoft YaHei", 微软雅黑, "Microsoft YaHei UI", Helvetica, Tahoma, Arial, 宋体, sans-serif;
 }
 }
 .menu{
     ul{
+        list-style: none;
         li{
-            width: 30%;
+            width: 20%;
             float: left;
             padding: 50px;
             a{
@@ -47,14 +50,29 @@ p{
                 h3{
                     color: #f60;
                     height: 50px;
-                    line-height: 50px;
+                    line-height: 30px;
                     font-size: 30px;
                 }
                 p{
                     color: #f60;
+                    float: left;
                     height: 50px;
                     line-height: 50px;
+                    
+                }
+                span{
+                    
+                    height: 40px;
                     font-size: 20px;
+                    background: #f60;
+                    color: #fff;
+                    width: 90px;
+                    margin-right: 10px;
+                    line-height: 40px;
+                    text-align: center;
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    border-radius: 10px;
                 }
             }
         }

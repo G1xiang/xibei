@@ -1,7 +1,6 @@
 var scrollFunc=function(e){
     // console.log(e.wheelDelta);
     if(e.wheelDelta<0){
-        console.log(1)
         $('#box1').css({"top":"-100%"})
         $('#box2').css({"top":"0","position":"static"})
         $('.front-mask').removeClass('hide').addClass('show')

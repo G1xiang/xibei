@@ -13,7 +13,6 @@
     position: fixed;
     right: 0;
     top: 0;
-    border: 1px solid #ccc;
     background: #fff; }
     .rightNav .nav .navTop {
       width: 100%; }
@@ -194,28 +193,42 @@
     text-align: left;
     font-family: PingFangSC-Regular, PingFangHK-Regular, SourceHanSansCN-Normal, "Source Han Sans CN", "Microsoft YaHei", 微软雅黑, "Microsoft YaHei UI", Helvetica, Tahoma, Arial, 宋体, sans-serif; }
 
-.menu ul li {
-  width: 30%;
-  float: left;
-  padding: 50px; }
-  .menu ul li a {
-    text-decoration: none;
-    display: block;
-    width: 200px;
-    height: 300px;
-    border: 2px solid #999;
-    border-radius: 20px;
-    overflow: hidden; }
-    .menu ul li a img {
+.menu ul {
+  list-style: none; }
+  .menu ul li {
+    width: 20%;
+    float: left;
+    padding: 50px; }
+    .menu ul li a {
+      text-decoration: none;
+      display: block;
       width: 200px;
-      height: 200px; }
-    .menu ul li a h3 {
-      color: #f60;
-      height: 50px;
-      line-height: 50px;
-      font-size: 30px; }
-    .menu ul li a p {
-      color: #f60;
-      height: 50px;
-      line-height: 50px;
-      font-size: 20px; }
+      height: 300px;
+      border: 2px solid #999;
+      border-radius: 20px;
+      overflow: hidden; }
+      .menu ul li a img {
+        width: 200px;
+        height: 200px; }
+      .menu ul li a h3 {
+        color: #f60;
+        height: 50px;
+        line-height: 30px;
+        font-size: 30px; }
+      .menu ul li a p {
+        color: #f60;
+        float: left;
+        height: 50px;
+        line-height: 50px; }
+      .menu ul li a span {
+        height: 40px;
+        font-size: 20px;
+        background: #f60;
+        color: #fff;
+        width: 90px;
+        margin-right: 10px;
+        line-height: 40px;
+        text-align: center;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 10px; }

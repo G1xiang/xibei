@@ -181,7 +181,13 @@ a {
 }
 
 
+<<<<<<< HEAD
 @import './foot.scss';
+=======
+
+@import './footer.scss';
+
+>>>>>>> 67c50b45ec5e6a4e83efee090874f4019a1d38f1
 @import './rightNav.scss';
 .service-main{
     width: 100%;
@@ -199,3 +205,4 @@ a {
 
 }
 
+@import './navdialog.css'
